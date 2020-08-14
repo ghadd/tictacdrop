@@ -19,7 +19,7 @@ def get_play_markup():
     return markup
 
 
-SIGNATURES = ['⠀', '❌', '⭕', '💣']
+SIGNATURES = ['⠀', '❌', '⭕', '💣', '💩']
 
 
 def get_field_markup(field):
