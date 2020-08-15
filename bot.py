@@ -1,6 +1,5 @@
 import json
 import re
-import threading
 
 import telebot
 
@@ -12,15 +11,23 @@ from models.game import Game
 from models.user import User
 import logger
 
+# predefining bot client
 bot = telebot.TeleBot(config.TOKEN)
+
+# creating needed database tables
 User.create_table()
 Game.create_table()
 
+# introducing a logger
 logger = logger.get_logger(__name__)
 
 
 @bot.message_handler(commands=['start'])
-def start(msg):
+def start(msg: telebot.types.Message):
+    """
+    Handles /start queries coming with msg - registers the user
+    :param msg: incoming message update
+    """
     logger.info(f'New /start command from id: {msg.from_user.id}.')
 
     bot.send_message(
@@ -33,12 +40,21 @@ def start(msg):
 
 
 @bot.message_handler(commands=['game'])
-def game_f(msg):
+def game_f(msg: telebot.types.Message):
+    """
+    Handles /game queries coming with msg - sends game markup if user is not in game
+    :param msg: incoming message update
+    :return: Terminates with corresponding response when user is not registered
+    """
     user = utils.get_user_or_none(msg.from_user.id)
     if not user:
+        bot.send_message(
+            msg.from_user.id,
+            'Probably, you are not registered. Press /start.'
+        )
         return
 
-    if not (Game.get_or_none(Game.user1 == user) or Game.get_or_none(Game.user2 == user)):
+    if not utils.get_users_game(user):
         user.state = states.USER_IN_MENU
         utils.update_user(user)
     else:
@@ -57,12 +73,20 @@ def game_f(msg):
 
 
 @bot.message_handler(commands=['stats'], func=lambda msg: utils.exists_user(msg.from_user))
-def stats(msg):
+def stats(msg: telebot.types.Message):
+    """
+    Handles /stats queries coming with msg - replies with corresponding statistics
+    :param msg: incoming message update
+    :return: Terminates with corresponding response when user is not registered
+    """
     logger.info(f'New /stats command from id: {msg.from_user.id}.')
 
     user = utils.get_user_or_none(msg.from_user.id)
     if not user:
-        logger.warning(f'User id: {msg.from_user.id} looking for stats not found.')
+        bot.send_message(
+            msg.from_user.id,
+            'Probably, you are not registered. Press /start.'
+        )
         return
 
     bot.send_message(
@@ -77,7 +101,14 @@ def stats(msg):
 
 
 @bot.message_handler(commands=['leave'])
-def leave(msg):
+def leave(msg: telebot.types.Message):
+    """
+    Handles /leave query coming with msg - leaves the game (counting as lose) and changes your
+    signatures to poop emoji
+    :param msg: incoming message update
+    :return: Terminates with corresponding response when user is not registered
+    or is not in game
+    """
     if not utils.in_pvp_game(msg.from_user):
         bot.reply_to(
             msg,
@@ -85,14 +116,10 @@ def leave(msg):
         )
         return
 
-    user = utils.get_user_or_none(msg.from_user.id)
-    if not user:
+    game, user, opponent = utils.get_game_user_opponent(msg)
+    if not game or not user:
+        # todo log something
         return
-    game = Game.get_or_none(Game.user1 == user) or Game.get_or_none(Game.user2 == user)
-    if not game:
-        return
-
-    opponent = game.user1 if game.user2 == user else game.user2
 
     bot.send_message(
         user.user_id,
@@ -114,6 +141,7 @@ def leave(msg):
     field = json.loads(game.field)
     sig = 1 if user == game.user1 else 2
 
+    # changes users emojis to poop
     for i in range(len(field)):
         for j in range(len(field[i])):
             if field[i][j] == sig:
@@ -123,8 +151,13 @@ def leave(msg):
     Game.delete_by_id(game.id)
 
 
-@bot.message_handler(commands=['get_users'], func=lambda msg: msg.from_user.id == 662834330)
-def get_users(msg):
+@bot.message_handler(commands=['get_users'], func=lambda msg: msg.from_user.id == config.DEV_ID)
+def get_users(msg: telebot.types.Message):
+    """
+    Handles /get_users query - sends back a message with all users and their states
+    works for DEV_ID only
+    :param msg: incoming message update
+    """
     users = User.select()
     m = ''
     for user in users:
@@ -139,7 +172,12 @@ def get_users(msg):
 
 
 @bot.message_handler(commands=['get_games'], func=lambda msg: msg.from_user.id == 662834330)
-def get_games(msg):
+def get_games(msg: telebot.types.Message):
+    """
+    Handles /get_games query - sends back a message with all games
+    works for DEV_ID only
+    :param msg: incoming message update
+    """
     games = Game.select()
     m = ''
     for game in games:
@@ -151,8 +189,13 @@ def get_games(msg):
     )
 
 
-@bot.message_handler(commands=['kick_user'], func=lambda msg: msg.from_user.id == 662834330)
-def kick_user(msg):
+@bot.message_handler(commands=['kick_user'], func=lambda msg: msg.from_user.id == config.DEV_ID)
+def kick_user(msg: telebot.types.Message):
+    """
+    Handles /kick user {user_id} queries. EMERGENCY USE ONLY.
+    works for DEV_ID only
+    :param msg: incoming message update
+    """
     user_id = int(msg.text.split()[1])
     if User.delete().where(User.user_id == user_id).execute():
         bot.send_message(
@@ -166,18 +209,13 @@ def kick_user(msg):
         )
 
 
-# in-game chat handler
-@bot.message_handler(func=lambda msg: utils.in_pvp_game(msg.from_user) and utils.is_pvp_game(msg.from_user))
-def proceed_chatting_message(msg):
-    user = utils.get_user_or_none(msg.from_user.id)
-    if not user:
-        return
-
-    game = Game.get_or_none(Game.user1 == user) or Game.get_or_none(Game.user2 == user)
-    if not game:
-        return
-
-    receiver = game.user1 if game.user2 == user else game.user2
+@bot.message_handler(func=lambda msg: utils.in_pvp_game(msg.from_user))
+def proceed_chatting_message(msg: telebot.types.Message):
+    """
+    Handles any message coming from players in game. Simulates in-game chat.
+    :param msg: any msg coming with update
+    """
+    _, receiver, user = utils.get_game_user_opponent(msg)
     bot.send_message(
         receiver.user_id,
         f'**{user.first_name}:** __{msg.text}__',
@@ -186,7 +224,11 @@ def proceed_chatting_message(msg):
 
 
 @bot.message_handler()
-def unknown(msg):
+def unknown(msg: telebot.types.Message):
+    """
+    Handles all messages that could not be handled with previous handlers.
+    :param msg: incoming message update
+    """
     if not utils.exists_user(msg.from_user):
         bot.send_message(
             msg.from_user.id,
@@ -201,6 +243,11 @@ def unknown(msg):
 
 @bot.callback_query_handler(func=lambda cb: utils.in_menu(cb.from_user) and not re.match("[0-9]-[0-9]", cb.data))
 def proceed_menu_button_click(cb: telebot.types.CallbackQuery):
+    """
+    Handles any callback that doesn't match regex of field button click
+    coming from users with IN_MENU state
+    :param cb: incoming callback update
+    """
     logger.info(f'Got callback {cb.data} from id: {cb.from_user.id}.')
 
     message = bot.send_message(
@@ -226,7 +273,11 @@ def proceed_menu_button_click(cb: telebot.types.CallbackQuery):
 
 
 @bot.callback_query_handler(func=lambda cb: utils.in_pvp_game(cb.from_user) and re.match("[0-9]-[0-9]", cb.data))
-def proceed_game_field_click(cb):
+def proceed_game_field_click(cb: telebot.types.CallbackQuery):
+    """
+    Handles any game field clicks and performs corresponding actions
+    :param cb: incoming callback update
+    """
     logger.info(f'Got callback {cb.data} from id: {cb.from_user.id}.')
 
     x, y = [int(val) for val in cb.data.split('-')]

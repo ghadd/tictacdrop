@@ -79,18 +79,6 @@ def in_menu(usr):
     return user.state == states.USER_IN_MENU
 
 
-def is_pvp_game(usr):
-    user = get_user_or_none(usr.id)
-    if not user:
-        return False
-    game = get_users_game(user)
-
-    if not game:
-        return False
-
-    return game.type == states.PVP_GAME
-
-
 def get_games():
     return Game.select()
 
@@ -453,3 +441,15 @@ def update_thread(bot):
                 new_game_from2(bot, matchmaking_users.pop(), matchmaking_users.pop(), states.PVP_GAME)
 
         time.sleep(config.UPDATE_TIME)
+
+
+def get_game_user_opponent(msg):
+    user = utils.get_user_or_none(msg.from_user.id)
+    if not user:
+        return None, None, None
+    game = Game.get_or_none(Game.user1 == user) or Game.get_or_none(Game.user2 == user)
+    if not game:
+        return None, None, None
+    receiver = game.user1 if game.user2 == user else game.user2
+
+    return game, receiver, user
