@@ -1,8 +1,18 @@
+from typing import List
+
 from telebot.types import InlineKeyboardButton
 from telebot.types import InlineKeyboardMarkup
 
+from config import SIGNATURES
 
-def get_button(text, *callback_postfixes):
+
+def get_button(text: str, *callback_postfixes) -> InlineKeyboardButton:
+    """
+    Generates an InlineKeyboardButton with given text and callback contents
+    :param text: Text of button
+    :param callback_postfixes: collection of strings which'll form a dash(`-`) separated callback data
+    :return:
+    """
     return InlineKeyboardButton(
         text,
         callback_data="-".join([
@@ -19,10 +29,12 @@ def get_play_markup():
     return markup
 
 
-SIGNATURES = ['⠀', '❌', '⭕', '💣', '💩']
-
-
-def get_field_markup(field):
+def get_field_markup(field: List[List[int]]) -> InlineKeyboardMarkup:
+    """
+    Generates an inline keyboard for given field
+    :param field: matrix of game state
+    :return: InlineKeyboardMarkup of field
+    """
     buttons_field = [[
         InlineKeyboardButton(
             SIGNATURES[field[i][j]],

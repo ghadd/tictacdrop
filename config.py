@@ -1,6 +1,15 @@
-TOKEN = '1306664428:AAGFUerOzXs4zK6ZitkI1mQo6Z9ydGRkIHw'
+TOKEN = '1306664428:AAFg1GHqFocDFEjAFJkR538oczx8q59qFD8'
 COLS = 7
 ROWS = 6
-UPDATE_TIME = 30
 
-DEV_ID = 662834330
+# for special functionality
+DEV_ID = [662834330, ]
+
+'''
+:0: empty field
+:1: x-player sig
+:2: o-player sig
+:3: formed winning line | draw field sig
+:4: sig of player who used /leave command 
+'''
+SIGNATURES = ['⠀', '❌', '⭕', '💣', '💩']

@@ -1,6 +1,7 @@
 import logging
 
 
+# a basic logger generator
 def get_logger(name):
     _logger = logging.Logger(name, level=logging.DEBUG)
     file_handler = logging.FileHandler('./tictacdrop.log')

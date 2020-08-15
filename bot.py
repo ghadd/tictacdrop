@@ -1,6 +1,7 @@
 import json
 import re
 
+import jsonpickle
 import telebot
 
 import buttons
@@ -46,7 +47,7 @@ def game_f(msg: telebot.types.Message):
     :param msg: incoming message update
     :return: Terminates with corresponding response when user is not registered
     """
-    user = utils.get_user_or_none(msg.from_user.id)
+    user = utils.get_user_or_none(msg.from_user)
     if not user:
         bot.send_message(
             msg.from_user.id,
@@ -81,7 +82,7 @@ def stats(msg: telebot.types.Message):
     """
     logger.info(f'New /stats command from id: {msg.from_user.id}.')
 
-    user = utils.get_user_or_none(msg.from_user.id)
+    user = utils.get_user_or_none(msg.from_user)
     if not user:
         bot.send_message(
             msg.from_user.id,
@@ -116,7 +117,7 @@ def leave(msg: telebot.types.Message):
         )
         return
 
-    game, user, opponent = utils.get_game_user_opponent(msg)
+    game, user, opponent = utils.get_game_user_opponent(msg.from_user)
     if not game or not user:
         # todo log something
         return
@@ -151,7 +152,7 @@ def leave(msg: telebot.types.Message):
     Game.delete_by_id(game.id)
 
 
-@bot.message_handler(commands=['get_users'], func=lambda msg: msg.from_user.id == config.DEV_ID)
+@bot.message_handler(commands=['get_users'], func=lambda msg: msg.from_user.id in config.DEV_ID)
 def get_users(msg: telebot.types.Message):
     """
     Handles /get_users query - sends back a message with all users and their states
@@ -171,7 +172,7 @@ def get_users(msg: telebot.types.Message):
     )
 
 
-@bot.message_handler(commands=['get_games'], func=lambda msg: msg.from_user.id == 662834330)
+@bot.message_handler(commands=['get_games'], func=lambda msg: msg.from_user.id in config.DEV_ID)
 def get_games(msg: telebot.types.Message):
     """
     Handles /get_games query - sends back a message with all games
@@ -181,7 +182,7 @@ def get_games(msg: telebot.types.Message):
     games = Game.select()
     m = ''
     for game in games:
-        m += f'{game.id}: {game}\n'
+        m += f'{game.id}: {jsonpickle.encode(game)}\n'
 
     bot.send_message(
         msg.from_user.id,
@@ -189,7 +190,7 @@ def get_games(msg: telebot.types.Message):
     )
 
 
-@bot.message_handler(commands=['kick_user'], func=lambda msg: msg.from_user.id == config.DEV_ID)
+@bot.message_handler(commands=['kick_user'], func=lambda msg: msg.from_user.id in config.DEV_ID)
 def kick_user(msg: telebot.types.Message):
     """
     Handles /kick user {user_id} queries. EMERGENCY USE ONLY.
@@ -254,7 +255,7 @@ def proceed_menu_button_click(cb: telebot.types.CallbackQuery):
         cb.from_user.id,
         'Starting the game.'
     )
-    user = utils.get_user_or_none(cb.from_user.id)
+    user = utils.get_user_or_none(cb.from_user)
     if user:
         utils.update_dissolving_messages(user, 'starting_the_game', message)
 
@@ -279,22 +280,9 @@ def proceed_game_field_click(cb: telebot.types.CallbackQuery):
     :param cb: incoming callback update
     """
     logger.info(f'Got callback {cb.data} from id: {cb.from_user.id}.')
-
-    x, y = [int(val) for val in cb.data.split('-')]
-    logger.info(f'Proceeding click from id: {cb.from_user.id} to set {(x, y)} value.')
-    utils.handle_game_field_click(bot, cb, y)
+    utils.handle_game_field_click(bot, cb)
 
 
+# bot polling entry
 if __name__ == '__main__':
     bot.polling(none_stop=True)
-
-    # uncomment when extra update layer needed
-    # threading.Thread(
-    #     target=bot.polling,
-    #     args=(True,)
-    # ).start()
-    #
-    # threading.Thread(
-    #     target=utils.update_thread,
-    #     args=(bot,)
-    # ).start()

@@ -978,3 +978,9 @@
 2020-08-15 13:32:36,120 - __main__ - INFO - Deleting message Hello, welcome to TicTacDrop! from chat 934450726.
 2020-08-15 13:32:38,610 - __main__ - INFO - Got callback 2-5 from id: 934450726.
 2020-08-15 13:32:38,614 - __main__ - INFO - Proceeding click from id: 934450726 to set (2, 5) value.
+2020-08-15 18:51:09,162 - __main__ - INFO - Got callback 1-3 from id: 662834330.
+2020-08-15 18:51:09,166 - utils - INFO - Proceeding click from id: 662834330 to set (1, 3) value.
+2020-08-15 18:51:09,169 - utils - INFO - Deleting messages with keys `['first_message']` from id 662834330.
+2020-08-15 18:51:09,360 - utils - INFO - Filtering messages with keys `['first_message']` from id 662834330.
+2020-08-15 18:51:09,371 - utils - INFO - Deleting messages with keys `['first_message']` from id 934450726.
+2020-08-15 18:51:09,564 - utils - INFO - Filtering messages with keys `['first_message']` from id 934450726.
