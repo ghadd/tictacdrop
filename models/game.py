@@ -15,4 +15,4 @@ class Game(BaseModel):
     state = IntegerField(default=states.NOT_CREATED_GAME)
     type = IntegerField()
 
-    field = CharField()  # json representation of 4x4 matrix of integers
+    field = CharField()  # json representation of matrix

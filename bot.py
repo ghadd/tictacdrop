@@ -1,5 +1,6 @@
 import json
 import re
+import threading
 
 import telebot
 
@@ -31,8 +32,21 @@ def start(msg):
     utils.save_user(msg.from_user)
 
 
-@bot.message_handler(commands=['game'], func=lambda msg: utils.in_menu(msg.from_user))
+@bot.message_handler(commands=['game'])
 def game_f(msg):
+    user = utils.get_user_or_none(msg.from_user.id)
+    if not user:
+        return
+
+    if not (Game.get_or_none(Game.user1 == user) or Game.get_or_none(Game.user2 == user)):
+        user.state = states.USER_IN_MENU
+        utils.update_user(user)
+    else:
+        bot.send_message(
+            msg.from_user.id,
+            "Hey, you are in active game."
+        )
+
     logger.info(f'New /game command from id: {msg.from_user.id}.')
 
     bot.send_message(
@@ -62,8 +76,15 @@ def stats(msg):
     )
 
 
-@bot.message_handler(commands=['leave'], func=lambda msg: utils.in_game(msg.from_user))
+@bot.message_handler(commands=['leave'])
 def leave(msg):
+    if not utils.in_pvp_game(msg.from_user):
+        bot.reply_to(
+            msg,
+            'This command outside of game is useless.'
+        )
+        return
+
     user = utils.get_user_or_none(msg.from_user.id)
     if not user:
         return
@@ -107,7 +128,8 @@ def get_users(msg):
     users = User.select()
     m = ''
     for user in users:
-        m += f'[{user.first_name}](tg://user?id={user.user_id})\n'
+        menu_caption = "In PVP game" if user.state == states.USER_IN_PVP_GAME else "In AI game" if user.state == states.USER_IN_AI_GAME else "In menu"
+        m += f'[{user.first_name}](tg://user?id={user.user_id}) - {menu_caption}\n'
 
     bot.send_message(
         msg.from_user.id,
@@ -116,8 +138,36 @@ def get_users(msg):
     )
 
 
+@bot.message_handler(commands=['get_games'], func=lambda msg: msg.from_user.id == 662834330)
+def get_games(msg):
+    games = Game.select()
+    m = ''
+    for game in games:
+        m += f'{game.id}: {game}\n'
+
+    bot.send_message(
+        msg.from_user.id,
+        m
+    )
+
+
+@bot.message_handler(commands=['kick_user'], func=lambda msg: msg.from_user.id == 662834330)
+def kick_user(msg):
+    user_id = int(msg.text.split()[1])
+    if User.delete().where(User.user_id == user_id).execute():
+        bot.send_message(
+            msg.from_user.id,
+            'OK.'
+        )
+    else:
+        bot.send_message(
+            msg.from_user.id,
+            'Cannot fo that.'
+        )
+
+
 # in-game chat handler
-@bot.message_handler(func=lambda msg: utils.in_game(msg.from_user) and utils.is_pvp_game(msg.from_user))
+@bot.message_handler(func=lambda msg: utils.in_pvp_game(msg.from_user) and utils.is_pvp_game(msg.from_user))
 def proceed_chatting_message(msg):
     user = utils.get_user_or_none(msg.from_user.id)
     if not user:
@@ -153,10 +203,13 @@ def unknown(msg):
 def proceed_menu_button_click(cb: telebot.types.CallbackQuery):
     logger.info(f'Got callback {cb.data} from id: {cb.from_user.id}.')
 
-    bot.send_message(
+    message = bot.send_message(
         cb.from_user.id,
         'Starting the game.'
     )
+    user = utils.get_user_or_none(cb.from_user.id)
+    if user:
+        utils.update_dissolving_messages(user, 'starting_the_game', message)
 
     if cb.data == 'ai':
         logger.info(f'Starting AI game for id: {cb.from_user.id}.')
@@ -165,29 +218,32 @@ def proceed_menu_button_click(cb: telebot.types.CallbackQuery):
         logger.info(f'Starting PVP game for id: {cb.from_user.id}.')
         utils.start_new_game(bot, cb.from_user, 'person')
 
-    logger.info(f'Deleting message {cb.message}.')
+    logger.info(f'Deleting message {cb.message.text} from chat {cb.from_user.id}.')
     bot.delete_message(
         cb.from_user.id,
         cb.message.message_id
     )
 
 
-@bot.callback_query_handler(func=lambda msg: utils.in_game(msg.from_user))
+@bot.callback_query_handler(func=lambda cb: utils.in_pvp_game(cb.from_user) and re.match("[0-9]-[0-9]", cb.data))
 def proceed_game_field_click(cb):
     logger.info(f'Got callback {cb.data} from id: {cb.from_user.id}.')
 
-    try:
-        x, y = [int(val) for val in cb.data.split('-')]
-    except ValueError as e:
-        bot.answer_callback_query(
-            cb.id,
-            "STOP FUCKING PUSHING RANDOM BUTTONS",
-            show_alert=True,
-        )
-        return
-
+    x, y = [int(val) for val in cb.data.split('-')]
     logger.info(f'Proceeding click from id: {cb.from_user.id} to set {(x, y)} value.')
-    utils.handle_game_field_click(bot, cb, x, y)
+    utils.handle_game_field_click(bot, cb, y)
 
 
-bot.polling(none_stop=True)
+if __name__ == '__main__':
+    bot.polling(none_stop=True)
+
+    # uncomment when extra update layer needed
+    # threading.Thread(
+    #     target=bot.polling,
+    #     args=(True,)
+    # ).start()
+    #
+    # threading.Thread(
+    #     target=utils.update_thread,
+    #     args=(bot,)
+    # ).start()

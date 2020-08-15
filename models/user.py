@@ -12,3 +12,5 @@ class User(BaseModel):
     wins = IntegerField(default=0)
     losses = IntegerField(default=0)
     draws = IntegerField(default=0)
+
+    dissolving_messages = CharField(default='{}')  # json
