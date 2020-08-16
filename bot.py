@@ -216,7 +216,7 @@ def proceed_chatting_message(msg: telebot.types.Message):
     Handles any message coming from players in game. Simulates in-game chat.
     :param msg: any msg coming with update
     """
-    _, receiver, user = utils.get_game_user_opponent(msg)
+    _, user, receiver = utils.get_game_user_opponent(msg.from_user)
     bot.send_message(
         receiver.user_id,
         f'**{user.first_name}:** __{msg.text}__',
