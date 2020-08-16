@@ -174,14 +174,14 @@ def handle_ai_game(bot: telebot.TeleBot, user: User) -> None:
     :param bot:
     :param user:
     """
-    # TODO all logic
     bot.send_message(
         user.user_id,
         'In development...'
     )
-    # logger.info(f'Setting state of id: {user.user_id} to IN_AI_GAME.')
-    # user.state = states.USER_IN_AI_GAME
-    # update_user(user)
+    logger.info(f'Setting state of id: {user.user_id} to IN_AI_GAME.')
+    user.state = states.USER_IN_AI_GAME
+    update_user(user)
+    new_ai_game(bot, user)
 
 
 def handle_pvp_game(bot: telebot.TeleBot, user: User) -> None:
@@ -274,7 +274,7 @@ def new_game_from2(bot: telebot.TeleBot, user1: User, user2: User) -> None:
         field=json.dumps([[0 for _ in range(config.COLS)] for _ in range(config.ROWS)])
     )
 
-    send_first_game_message(bot, game)
+    send_first_pvp_game_message(bot, game)
 
 
 def join_pvp_game(bot: telebot.TeleBot, user: User) -> None:
@@ -295,16 +295,51 @@ def join_pvp_game(bot: telebot.TeleBot, user: User) -> None:
     game.user2 = user
     update_game(game)
 
-    send_first_game_message(bot, game)
+    send_first_pvp_game_message(bot, game)
 
 
-def send_first_game_message(bot: telebot.TeleBot, game: Game) -> None:
+def new_ai_game(bot: telebot.TeleBot, user: User) -> None:
+    game = Game.create(
+        user1=user,
+        type=states.AI_GAME,
+        state=states.RUNNING_GAME,
+        field=json.dumps([[0 for _ in range(config.COLS)] for _ in range(config.ROWS)])
+    )
+
+    send_first_ai_game_message(bot, game)
+
+
+def send_first_ai_game_message(bot: telebot.TeleBot, game: Game) -> None:
+    logger.info(f'Sending first AI game message for {game.user1.user_id}')
+    user = game.user1
+    message = bot.send_message(
+        user.user_id,
+        'Game is starting! Your opponent is Artificial Intelligence. ' +
+        f'Your signature is `{config.SIGNATURES[1]}`.',
+        parse_mode='Markdown',
+        reply_markup=buttons.get_field_markup(
+            json.loads(game.field)
+        )
+    )
+    game.message1 = message.message_id
+    update_game(game)
+
+    message = bot.send_message(
+        user.user_id,
+        'You are starting.'
+    )
+    update_dissolving_messages(user, 'first_message', message)
+
+    delete_dissolving_messages(bot, user, ['starting_the_game', 'matchmaking'])
+
+
+def send_first_pvp_game_message(bot: telebot.TeleBot, game: Game) -> None:
     """
     Sends a board and a first move tip to players of given game
     :param bot: Bot object that manages all the stuff
     :param game: Game to begin and send first messages and a board to its players
     """
-    logger.info(f'Sending first game message for {game.user1.user_id} and {game.user2.user_id}')
+    logger.info(f'Sending first PVP game message for {game.user1.user_id} and {game.user2.user_id}')
     for user in [game.user1, game.user2]:
         message = bot.send_message(
             user.user_id,
@@ -467,10 +502,56 @@ def handle_game_field_click(bot: telebot.TeleBot, cb: telebot.types.CallbackQuer
     x, y = [int(val) for val in cb.data.split('-')]
     logger.info(f'Proceeding click from id: {cb.from_user.id} to set {(x, y)} value.')
 
+    user = get_user_or_none(cb.from_user)
+    if user:
+        if user.state == states.USER_IN_PVP_GAME:
+            handle_pvp_game_click(bot, cb, y)
+        else:
+            handle_ai_game_click(bot, cb, y)
+
+
+def handle_ai_game_click(bot, cb, y):
+    game, user, _ = get_game_user_opponent(cb.from_user)
+    field = json.loads(game.field)
+
+    if field[0][y] != 0:
+        bot.answer_callback_query(
+            cb.id,
+            'This column is full.',
+            show_alert=True
+        )
+        return
+    k = config.ROWS - 1
+
+    while field[k][y] != 0:
+        k -= 1
+
+    field[k][y] = 1
+
+    #TODO AI logic
+
+    game.field = json.dumps(field)
+    update_game(game)
+
+    #TODO handling for AI-games
+
+    # winner, win_coords, win_dir = has_winner(field)
+    # if winner:
+    #     if win_dir == (0, 0):
+    #         logger.info(f'Game {game} ended with draw.')
+    #         handle_draw(bot, game, user, _)
+    #     else:
+    #         logger.info(f'Game {game} ended with winner {user.user_id}')
+    #         handle_win(bot, field, game, user, _, win_coords, win_dir)
+    # else:
+    #     send_updated_field(bot, field, game, _)
+
+
+
+def handle_pvp_game_click(bot, cb, y):
     game, user, opponent = get_game_user_opponent(cb.from_user)
     if not game:
         return
-
     if cb.message.message_id != game.message1 and \
             cb.message.message_id != game.message2:
         bot.answer_callback_query(
@@ -479,7 +560,6 @@ def handle_game_field_click(bot: telebot.TeleBot, cb: telebot.types.CallbackQuer
             show_alert=True
         )
         return
-
     if [game.user1, game.user2][game.move - 1].user_id == cb.from_user.id:
         field = json.loads(game.field)
 

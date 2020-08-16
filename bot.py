@@ -273,7 +273,7 @@ def proceed_menu_button_click(cb: telebot.types.CallbackQuery):
     )
 
 
-@bot.callback_query_handler(func=lambda cb: utils.in_pvp_game(cb.from_user) and re.match("[0-9]-[0-9]", cb.data))
+@bot.callback_query_handler(func=lambda cb: not utils.in_menu(cb.from_user) and re.match("[0-9]-[0-9]", cb.data))
 def proceed_game_field_click(cb: telebot.types.CallbackQuery):
     """
     Handles any game field clicks and performs corresponding actions

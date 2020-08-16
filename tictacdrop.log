@@ -985,3 +985,252 @@
 2020-08-15 18:51:09,371 - utils - INFO - Deleting messages with keys `['first_message']` from id 934450726.
 2020-08-15 18:51:09,564 - utils - INFO - Filtering messages with keys `['first_message']` from id 934450726.
 2020-08-16 10:26:24,507 - __main__ - INFO - New /game command from id: 662834330.
+2020-08-16 11:08:43,968 - __main__ - INFO - New /start command from id: 408970630.
+2020-08-16 11:08:44,251 - utils - INFO - Saving user id: 408970630.
+2020-08-16 11:08:47,429 - __main__ - INFO - Got callback ai from id: 408970630.
+2020-08-16 11:08:47,560 - __main__ - INFO - Starting AI game for id: 408970630.
+2020-08-16 11:08:47,715 - __main__ - INFO - Deleting message Hello, welcome to TicTacDrop! from chat 408970630.
+2020-08-16 11:20:58,961 - __main__ - INFO - New /start command from id: 408970630.
+2020-08-16 11:20:59,295 - utils - INFO - User id: 408970630 is in DB.
+2020-08-16 11:21:00,896 - __main__ - INFO - Got callback person from id: 408970630.
+2020-08-16 11:21:01,003 - __main__ - INFO - Starting PVP game for id: 408970630.
+2020-08-16 11:21:01,005 - utils - INFO - Setting state of id: 408970630 to IN_PVP_GAME.
+2020-08-16 11:21:01,106 - utils - INFO - User id 408970630 is looking for game.
+2020-08-16 11:21:01,107 - utils - INFO - No matchmaking game found, creating a new one.
+2020-08-16 11:21:01,108 - utils - INFO - id 408970630 creates new game.
+2020-08-16 11:21:01,111 - __main__ - INFO - Deleting message Hello, welcome to TicTacDrop! from chat 408970630.
+2020-08-16 11:22:20,866 - __main__ - INFO - New /start command from id: 408970630.
+2020-08-16 11:22:20,966 - utils - INFO - User id: 408970630 is in DB.
+2020-08-16 12:51:48,660 - __main__ - INFO - New /start command from id: 1094610731.
+2020-08-16 12:51:48,660 - __main__ - INFO - New /start command from id: 1094610731.
+2020-08-16 12:51:48,903 - utils - INFO - Saving user id: 1094610731.
+2020-08-16 12:51:48,942 - utils - INFO - User id: 1094610731 is in DB.
+2020-08-16 12:51:53,104 - __main__ - INFO - Got callback person from id: 1094610731.
+2020-08-16 12:51:53,256 - __main__ - INFO - Starting PVP game for id: 1094610731.
+2020-08-16 12:51:53,257 - utils - INFO - Setting state of id: 1094610731 to IN_PVP_GAME.
+2020-08-16 12:51:53,428 - utils - INFO - User id 1094610731 is looking for game.
+2020-08-16 12:51:53,434 - utils - INFO - Sending first game message for 408970630 and 1094610731
+2020-08-16 12:51:53,871 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-16 12:51:54,329 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-16 12:51:54,554 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 1094610731.
+2020-08-16 12:51:54,750 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 1094610731.
+2020-08-16 12:51:54,753 - __main__ - INFO - Deleting message Hello, welcome to TicTacDrop! from chat 1094610731.
+2020-08-16 12:52:05,953 - __main__ - INFO - Got callback 1-2 from id: 408970630.
+2020-08-16 12:52:05,956 - utils - INFO - Proceeding click from id: 408970630 to set (1, 2) value.
+2020-08-16 12:52:05,962 - utils - INFO - Deleting messages with keys `['first_message']` from id 408970630.
+2020-08-16 12:52:06,074 - utils - INFO - Filtering messages with keys `['first_message']` from id 408970630.
+2020-08-16 12:52:06,085 - utils - INFO - Deleting messages with keys `['first_message']` from id 1094610731.
+2020-08-16 12:52:06,200 - utils - INFO - Filtering messages with keys `['first_message']` from id 1094610731.
+2020-08-16 12:52:13,582 - __main__ - INFO - Got callback 2-2 from id: 1094610731.
+2020-08-16 12:52:13,583 - utils - INFO - Proceeding click from id: 1094610731 to set (2, 2) value.
+2020-08-16 12:52:13,589 - utils - INFO - Deleting messages with keys `['first_message']` from id 1094610731.
+2020-08-16 12:52:13,589 - utils - INFO - Filtering messages with keys `['first_message']` from id 1094610731.
+2020-08-16 12:52:13,590 - utils - INFO - Deleting messages with keys `['first_message']` from id 408970630.
+2020-08-16 12:52:13,590 - utils - INFO - Filtering messages with keys `['first_message']` from id 408970630.
+2020-08-16 12:52:21,181 - __main__ - INFO - Got callback 3-3 from id: 408970630.
+2020-08-16 12:52:21,184 - utils - INFO - Proceeding click from id: 408970630 to set (3, 3) value.
+2020-08-16 12:52:31,657 - __main__ - INFO - Got callback 4-1 from id: 1094610731.
+2020-08-16 12:52:31,660 - utils - INFO - Proceeding click from id: 1094610731 to set (4, 1) value.
+2020-08-16 12:52:55,301 - __main__ - INFO - Got callback 3-3 from id: 408970630.
+2020-08-16 12:52:55,303 - utils - INFO - Proceeding click from id: 408970630 to set (3, 3) value.
+2020-08-16 12:52:58,027 - __main__ - INFO - Got callback 3-3 from id: 1094610731.
+2020-08-16 12:52:58,027 - utils - INFO - Proceeding click from id: 1094610731 to set (3, 3) value.
+2020-08-16 12:53:05,483 - __main__ - INFO - Got callback 3-4 from id: 408970630.
+2020-08-16 12:53:05,484 - utils - INFO - Proceeding click from id: 408970630 to set (3, 4) value.
+2020-08-16 12:53:09,707 - __main__ - INFO - Got callback 3-4 from id: 1094610731.
+2020-08-16 12:53:09,707 - utils - INFO - Proceeding click from id: 1094610731 to set (3, 4) value.
+2020-08-16 12:53:12,741 - __main__ - INFO - Got callback 2-4 from id: 408970630.
+2020-08-16 12:53:12,741 - utils - INFO - Proceeding click from id: 408970630 to set (2, 4) value.
+2020-08-16 12:53:15,025 - __main__ - INFO - Got callback 2-4 from id: 1094610731.
+2020-08-16 12:53:15,025 - utils - INFO - Proceeding click from id: 1094610731 to set (2, 4) value.
+2020-08-16 12:53:15,169 - utils - INFO - Game 2 ended with winner 1094610731
+2020-08-16 12:54:22,811 - __main__ - INFO - Got callback person from id: 408970630.
+2020-08-16 12:54:22,922 - __main__ - INFO - Starting PVP game for id: 408970630.
+2020-08-16 12:54:22,923 - utils - INFO - Setting state of id: 408970630 to IN_PVP_GAME.
+2020-08-16 12:54:23,022 - utils - INFO - User id 408970630 is looking for game.
+2020-08-16 12:54:23,024 - utils - INFO - No matchmaking game found, creating a new one.
+2020-08-16 12:54:23,024 - utils - INFO - id 408970630 creates new game.
+2020-08-16 12:54:23,027 - __main__ - INFO - Deleting message Hello, welcome to TicTacDrop! from chat 408970630.
+2020-08-16 12:54:39,401 - __main__ - INFO - Got callback person from id: 1094610731.
+2020-08-16 12:54:39,577 - __main__ - INFO - Starting PVP game for id: 1094610731.
+2020-08-16 12:54:39,578 - utils - INFO - Setting state of id: 1094610731 to IN_PVP_GAME.
+2020-08-16 12:54:39,684 - utils - INFO - User id 1094610731 is looking for game.
+2020-08-16 12:54:39,689 - utils - INFO - Sending first game message for 408970630 and 1094610731
+2020-08-16 12:54:39,901 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-16 12:54:40,065 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-16 12:54:40,334 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 1094610731.
+2020-08-16 12:54:40,522 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 1094610731.
+2020-08-16 12:54:40,525 - __main__ - INFO - Deleting message Hello, welcome to TicTacDrop! from chat 1094610731.
+2020-08-16 12:55:36,846 - __main__ - INFO - New /stats command from id: 1094610731.
+2020-08-16 14:55:34,992 - __main__ - INFO - New /start command from id: 408970630.
+2020-08-16 14:55:35,249 - utils - INFO - User id: 408970630 is in DB.
+2020-08-16 14:55:36,969 - __main__ - INFO - Got callback ai from id: 408970630.
+2020-08-16 14:55:37,237 - __main__ - INFO - Starting AI game for id: 408970630.
+2020-08-16 14:55:37,356 - utils - INFO - Setting state of id: 408970630 to IN_AI_GAME.
+2020-08-16 14:55:37,359 - utils - INFO - id 408970630 creates new game.
+2020-08-16 14:55:37,362 - __main__ - INFO - Deleting message Hello, welcome to TicTacDrop! from chat 408970630.
+2020-08-16 15:51:33,912 - __main__ - INFO - New /start command from id: 408970630.
+2020-08-16 15:51:34,120 - utils - INFO - User id: 408970630 is in DB.
+2020-08-16 15:53:23,192 - __main__ - INFO - New /game command from id: 408970630.
+2020-08-16 15:56:03,821 - __main__ - INFO - Got callback ai from id: 408970630.
+2020-08-16 15:56:04,014 - __main__ - INFO - Starting AI game for id: 408970630.
+2020-08-16 15:56:04,110 - utils - INFO - Setting state of id: 408970630 to IN_AI_GAME.
+2020-08-16 15:56:04,114 - utils - INFO - Sending first AI game message for 408970630
+2020-08-16 15:56:04,291 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-16 15:56:04,353 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-16 15:56:04,357 - __main__ - INFO - Deleting message Wanna play? from chat 408970630.
+2020-08-16 15:56:11,838 - __main__ - INFO - Got callback 5-2 from id: 408970630.
+2020-08-16 15:56:11,839 - utils - INFO - Proceeding click from id: 408970630 to set (5, 2) value.
+2020-08-16 15:56:21,385 - __main__ - INFO - Got callback person from id: 408970630.
+2020-08-16 15:56:21,624 - __main__ - INFO - Starting PVP game for id: 408970630.
+2020-08-16 15:56:21,626 - utils - INFO - Setting state of id: 408970630 to IN_PVP_GAME.
+2020-08-16 15:56:21,728 - utils - INFO - User id 408970630 is looking for game.
+2020-08-16 15:56:21,733 - utils - INFO - Sending first PVP game message for 408970630 and 408970630
+2020-08-16 15:56:21,977 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-16 15:56:22,151 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-16 15:56:22,371 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-16 15:56:32,628 - __main__ - INFO - Got callback 2-3 from id: 408970630.
+2020-08-16 15:56:32,634 - utils - INFO - Proceeding click from id: 408970630 to set (2, 3) value.
+2020-08-16 15:56:32,639 - utils - INFO - Deleting messages with keys `['first_message']` from id 408970630.
+2020-08-16 15:56:32,733 - utils - INFO - Filtering messages with keys `['first_message']` from id 408970630.
+2020-08-16 15:56:32,736 - utils - INFO - Deleting messages with keys `['first_message']` from id 408970630.
+2020-08-16 15:56:35,730 - __main__ - INFO - Got callback 3-2 from id: 408970630.
+2020-08-16 15:56:35,730 - utils - INFO - Proceeding click from id: 408970630 to set (3, 2) value.
+2020-08-16 15:57:06,818 - __main__ - INFO - New /start command from id: 408970630.
+2020-08-16 15:57:06,920 - utils - INFO - User id: 408970630 is in DB.
+2020-08-16 15:57:08,995 - __main__ - INFO - Got callback person from id: 408970630.
+2020-08-16 15:57:09,109 - __main__ - INFO - Starting PVP game for id: 408970630.
+2020-08-16 15:57:09,111 - utils - WARNING - User id 408970630 is already in game.
+2020-08-16 15:57:09,228 - __main__ - INFO - Deleting message Hello, welcome to TicTacDrop! from chat 408970630.
+2020-08-16 15:57:27,101 - __main__ - INFO - New /start command from id: 408970630.
+2020-08-16 15:57:27,182 - utils - INFO - User id: 408970630 is in DB.
+2020-08-16 15:58:22,791 - __main__ - INFO - New /start command from id: 408970630.
+2020-08-16 15:58:23,052 - utils - INFO - User id: 408970630 is in DB.
+2020-08-16 16:00:12,415 - __main__ - INFO - New /start command from id: 408970630.
+2020-08-16 16:00:12,691 - utils - INFO - User id: 408970630 is in DB.
+2020-08-16 16:00:37,923 - __main__ - INFO - Got callback person from id: 408970630.
+2020-08-16 16:00:38,219 - __main__ - INFO - Starting PVP game for id: 408970630.
+2020-08-16 16:00:38,221 - utils - INFO - Setting state of id: 408970630 to IN_PVP_GAME.
+2020-08-16 16:00:38,346 - utils - INFO - User id 408970630 is looking for game.
+2020-08-16 16:00:38,348 - utils - INFO - No matchmaking game found, creating a new one.
+2020-08-16 16:00:38,348 - utils - INFO - id 408970630 creates new game.
+2020-08-16 16:00:38,351 - __main__ - INFO - Deleting message Hello, welcome to TicTacDrop! from chat 408970630.
+2020-08-16 16:00:55,977 - __main__ - INFO - New /start command from id: 1094610731.
+2020-08-16 16:00:56,281 - utils - INFO - User id: 1094610731 is in DB.
+2020-08-16 16:00:57,525 - __main__ - INFO - Got callback person from id: 1094610731.
+2020-08-16 16:00:57,687 - __main__ - INFO - Starting PVP game for id: 1094610731.
+2020-08-16 16:00:57,688 - utils - INFO - Setting state of id: 1094610731 to IN_PVP_GAME.
+2020-08-16 16:00:57,790 - utils - INFO - User id 1094610731 is looking for game.
+2020-08-16 16:00:57,797 - utils - INFO - Sending first PVP game message for 408970630 and 1094610731
+2020-08-16 16:00:58,014 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-16 16:00:58,305 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-16 16:00:58,573 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 1094610731.
+2020-08-16 16:00:58,726 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 1094610731.
+2020-08-16 16:00:58,730 - __main__ - INFO - Deleting message Hello, welcome to TicTacDrop! from chat 1094610731.
+2020-08-16 16:01:00,910 - __main__ - INFO - Got callback 5-4 from id: 1094610731.
+2020-08-16 16:01:00,910 - utils - INFO - Proceeding click from id: 1094610731 to set (5, 4) value.
+2020-08-16 16:01:05,710 - __main__ - INFO - Got callback 5-2 from id: 408970630.
+2020-08-16 16:01:05,710 - utils - INFO - Proceeding click from id: 408970630 to set (5, 2) value.
+2020-08-16 16:01:11,673 - __main__ - INFO - Got callback 3-3 from id: 408970630.
+2020-08-16 16:01:11,675 - utils - INFO - Proceeding click from id: 408970630 to set (3, 3) value.
+2020-08-16 16:02:37,285 - __main__ - INFO - Got callback 0-2 from id: 408970630.
+2020-08-16 16:02:37,286 - utils - INFO - Proceeding click from id: 408970630 to set (0, 2) value.
+2020-08-16 16:03:01,547 - __main__ - INFO - New /game command from id: 408970630.
+2020-08-16 16:03:03,339 - __main__ - INFO - Got callback person from id: 408970630.
+2020-08-16 16:03:03,452 - __main__ - INFO - Starting PVP game for id: 408970630.
+2020-08-16 16:03:03,454 - utils - INFO - Setting state of id: 408970630 to IN_PVP_GAME.
+2020-08-16 16:03:03,573 - utils - INFO - User id 408970630 is looking for game.
+2020-08-16 16:03:03,575 - utils - INFO - No matchmaking game found, creating a new one.
+2020-08-16 16:03:03,576 - utils - INFO - id 408970630 creates new game.
+2020-08-16 16:03:03,579 - __main__ - INFO - Deleting message Wanna play? from chat 408970630.
+2020-08-16 16:03:26,116 - __main__ - INFO - New /game command from id: 1094610731.
+2020-08-16 16:03:27,849 - __main__ - INFO - Got callback person from id: 1094610731.
+2020-08-16 16:03:27,970 - __main__ - INFO - Starting PVP game for id: 1094610731.
+2020-08-16 16:03:27,972 - utils - INFO - Setting state of id: 1094610731 to IN_PVP_GAME.
+2020-08-16 16:03:28,093 - utils - INFO - User id 1094610731 is looking for game.
+2020-08-16 16:03:28,098 - utils - INFO - Sending first PVP game message for 408970630 and 1094610731
+2020-08-16 16:03:28,388 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-16 16:03:28,575 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-16 16:03:28,789 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 1094610731.
+2020-08-16 16:03:28,943 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 1094610731.
+2020-08-16 16:03:28,947 - __main__ - INFO - Deleting message Wanna play? from chat 1094610731.
+2020-08-16 16:03:36,759 - __main__ - INFO - Got callback 4-3 from id: 1094610731.
+2020-08-16 16:03:36,760 - utils - INFO - Proceeding click from id: 1094610731 to set (4, 3) value.
+2020-08-16 16:03:45,771 - __main__ - INFO - Got callback 2-1 from id: 1094610731.
+2020-08-16 16:03:45,771 - utils - INFO - Proceeding click from id: 1094610731 to set (2, 1) value.
+2020-08-16 16:03:50,789 - __main__ - INFO - Got callback 4-4 from id: 1094610731.
+2020-08-16 16:03:50,790 - utils - INFO - Proceeding click from id: 1094610731 to set (4, 4) value.
+2020-08-16 16:05:03,042 - __main__ - INFO - New /start command from id: 408970630.
+2020-08-16 16:05:03,343 - utils - INFO - Saving user id: 408970630.
+2020-08-16 16:05:10,568 - __main__ - INFO - Got callback person from id: 408970630.
+2020-08-16 16:05:10,686 - __main__ - INFO - Starting PVP game for id: 408970630.
+2020-08-16 16:05:10,687 - utils - INFO - Setting state of id: 408970630 to IN_PVP_GAME.
+2020-08-16 16:05:10,781 - utils - INFO - No games found.
+2020-08-16 16:05:10,781 - utils - INFO - id 408970630 creates new game.
+2020-08-16 16:05:10,784 - __main__ - INFO - Deleting message Hello, welcome to TicTacDrop! from chat 408970630.
+2020-08-16 16:05:23,771 - __main__ - INFO - New /start command from id: 1094610731.
+2020-08-16 16:05:23,951 - utils - INFO - Saving user id: 1094610731.
+2020-08-16 16:05:26,839 - __main__ - INFO - Got callback person from id: 1094610731.
+2020-08-16 16:05:26,995 - __main__ - INFO - Starting PVP game for id: 1094610731.
+2020-08-16 16:05:26,996 - utils - INFO - Setting state of id: 1094610731 to IN_PVP_GAME.
+2020-08-16 16:05:27,105 - utils - INFO - User id 1094610731 is looking for game.
+2020-08-16 16:05:27,110 - utils - INFO - Sending first PVP game message for 408970630 and 1094610731
+2020-08-16 16:05:27,329 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-16 16:05:27,483 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-16 16:05:27,709 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 1094610731.
+2020-08-16 16:05:27,854 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 1094610731.
+2020-08-16 16:05:27,858 - __main__ - INFO - Deleting message Hello, welcome to TicTacDrop! from chat 1094610731.
+2020-08-16 16:05:32,414 - __main__ - INFO - Got callback 4-2 from id: 408970630.
+2020-08-16 16:05:32,414 - utils - INFO - Proceeding click from id: 408970630 to set (4, 2) value.
+2020-08-16 16:05:32,422 - utils - INFO - Deleting messages with keys `['first_message']` from id 408970630.
+2020-08-16 16:05:32,508 - utils - INFO - Filtering messages with keys `['first_message']` from id 408970630.
+2020-08-16 16:05:32,518 - utils - INFO - Deleting messages with keys `['first_message']` from id 1094610731.
+2020-08-16 16:05:32,604 - utils - INFO - Filtering messages with keys `['first_message']` from id 1094610731.
+2020-08-16 16:05:36,159 - __main__ - INFO - Got callback 4-3 from id: 1094610731.
+2020-08-16 16:05:36,159 - utils - INFO - Proceeding click from id: 1094610731 to set (4, 3) value.
+2020-08-16 16:05:36,168 - utils - INFO - Deleting messages with keys `['first_message']` from id 1094610731.
+2020-08-16 16:05:36,168 - utils - INFO - Filtering messages with keys `['first_message']` from id 1094610731.
+2020-08-16 16:05:36,169 - utils - INFO - Deleting messages with keys `['first_message']` from id 408970630.
+2020-08-16 16:05:36,169 - utils - INFO - Filtering messages with keys `['first_message']` from id 408970630.
+2020-08-16 16:05:39,538 - __main__ - INFO - Got callback 4-2 from id: 1094610731.
+2020-08-16 16:05:39,538 - utils - INFO - Proceeding click from id: 1094610731 to set (4, 2) value.
+2020-08-16 16:05:42,312 - __main__ - INFO - Got callback 3-2 from id: 408970630.
+2020-08-16 16:05:42,313 - utils - INFO - Proceeding click from id: 408970630 to set (3, 2) value.
+2020-08-16 16:05:44,043 - __main__ - INFO - Got callback 4-3 from id: 1094610731.
+2020-08-16 16:05:44,043 - utils - INFO - Proceeding click from id: 1094610731 to set (4, 3) value.
+2020-08-16 16:05:45,264 - __main__ - INFO - Got callback 3-2 from id: 408970630.
+2020-08-16 16:05:45,264 - utils - INFO - Proceeding click from id: 408970630 to set (3, 2) value.
+2020-08-16 16:05:47,320 - __main__ - INFO - Got callback 3-3 from id: 1094610731.
+2020-08-16 16:05:47,321 - utils - INFO - Proceeding click from id: 1094610731 to set (3, 3) value.
+2020-08-16 16:05:49,954 - __main__ - INFO - Got callback 2-2 from id: 408970630.
+2020-08-16 16:05:49,955 - utils - INFO - Proceeding click from id: 408970630 to set (2, 2) value.
+2020-08-16 16:05:50,072 - utils - INFO - Game 1 ended with winner 408970630
+2020-08-16 16:06:00,336 - __main__ - INFO - New /stats command from id: 408970630.
+2020-08-16 16:06:08,766 - __main__ - INFO - New /stats command from id: 1094610731.
+2020-08-16 16:06:33,520 - __main__ - INFO - New /game command from id: 408970630.
+2020-08-16 16:06:34,946 - __main__ - INFO - Got callback person from id: 408970630.
+2020-08-16 16:06:35,072 - __main__ - INFO - Starting PVP game for id: 408970630.
+2020-08-16 16:06:35,074 - utils - INFO - Setting state of id: 408970630 to IN_PVP_GAME.
+2020-08-16 16:06:35,161 - utils - INFO - No games found.
+2020-08-16 16:06:35,161 - utils - INFO - id 408970630 creates new game.
+2020-08-16 16:06:35,164 - __main__ - INFO - Deleting message Wanna play? from chat 408970630.
+2020-08-16 16:06:49,297 - __main__ - INFO - New /game command from id: 408970630.
+2020-08-16 16:08:37,376 - __main__ - INFO - New /game command from id: 408970630.
+2020-08-16 16:08:39,336 - __main__ - INFO - Got callback person from id: 408970630.
+2020-08-16 16:08:39,596 - __main__ - INFO - Starting PVP game for id: 408970630.
+2020-08-16 16:08:39,598 - utils - INFO - Setting state of id: 408970630 to IN_PVP_GAME.
+2020-08-16 16:08:39,737 - utils - INFO - No games found.
+2020-08-16 16:08:39,737 - utils - INFO - id 408970630 creates new game.
+2020-08-16 16:08:39,740 - __main__ - INFO - Deleting message Wanna play? from chat 408970630.
+2020-08-16 16:10:16,298 - __main__ - INFO - New /game command from id: 408970630.
+2020-08-16 16:10:18,581 - __main__ - INFO - Got callback ai from id: 408970630.
+2020-08-16 16:10:18,773 - __main__ - INFO - Starting AI game for id: 408970630.
+2020-08-16 16:10:18,854 - utils - INFO - Setting state of id: 408970630 to IN_AI_GAME.
+2020-08-16 16:10:18,860 - utils - INFO - Sending first AI game message for 408970630
+2020-08-16 16:10:19,035 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-16 16:10:19,168 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-16 16:10:19,172 - __main__ - INFO - Deleting message Wanna play? from chat 408970630.
+2020-08-16 16:13:49,413 - __main__ - INFO - Got callback 5-3 from id: 408970630.
+2020-08-16 16:13:49,413 - utils - INFO - Proceeding click from id: 408970630 to set (5, 3) value.
+2020-08-16 16:23:05,552 - __main__ - INFO - Got callback 5-3 from id: 408970630.
+2020-08-16 16:23:05,552 - utils - INFO - Proceeding click from id: 408970630 to set (5, 3) value.

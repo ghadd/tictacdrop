@@ -1,9 +1,9 @@
-TOKEN = 'TOKEN'
+TOKEN = '906364839:AAHkdc5YJUFJhhxSGeOAuyue6DE9rINaAFE'
 COLS = 7
 ROWS = 6
 
 # for special functionality
-DEV_ID = [662834330, ]
+DEV_ID = [662834330, 408970630, ]
 
 '''
 :0: empty field
