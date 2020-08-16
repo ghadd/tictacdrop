@@ -984,3 +984,4 @@
 2020-08-15 18:51:09,360 - utils - INFO - Filtering messages with keys `['first_message']` from id 662834330.
 2020-08-15 18:51:09,371 - utils - INFO - Deleting messages with keys `['first_message']` from id 934450726.
 2020-08-15 18:51:09,564 - utils - INFO - Filtering messages with keys `['first_message']` from id 934450726.
+2020-08-16 10:26:24,507 - __main__ - INFO - New /game command from id: 662834330.
