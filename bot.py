@@ -63,6 +63,7 @@ def game_f(msg: telebot.types.Message):
             msg.from_user.id,
             "Hey, you are in active game."
         )
+        return
 
     logger.info(f'New /game command from id: {msg.from_user.id}.')
 
@@ -150,6 +151,48 @@ def leave(msg: telebot.types.Message):
 
     utils.send_updated_field(bot, field, game, opponent)
     Game.delete_by_id(game.id)
+
+
+@bot.message_handler(commands=['issue'], content_types=['text'])
+def issue(msg):
+    data = msg.text.split()
+    if len(data) == 1:
+        bot.send_message(
+            msg.from_user.id,
+            'Use this command to tell the developer about an issue. '
+            'Example usage: `/issue I got 4 in a row but game did not end.`',
+            parse_mode='Markdown'
+        )
+    else:
+        m = ' '.join(data[1:])
+        for dev_id in config.DEV_ID:
+            bot.send_message(
+                dev_id,
+                '<b>Issue</b> from <a href="tg://user?id={id}">{first_name}</a>.\n'.format(
+                    first_name=msg.from_user.first_name,
+                    id=msg.from_user.id
+                ) +
+                'ID: {id}\n'.format(id=msg.from_user.id) +
+                '<i>{message}</i>\n'.format(message=m),
+                parse_mode='HTML'
+            )
+        bot.reply_to(
+            msg,
+            'Developer was notified. Thank you for your time.'
+        )
+
+
+@bot.message_handler(func=lambda msg: msg.from_user.id in config.DEV_ID and msg.reply_to_message)
+def reply_to_issue(msg):
+    index = msg.reply_to_message.text.index('ID') + 4
+    receiver_id = int(msg.reply_to_message.text[index:index + 9])
+
+    bot.send_message(
+        receiver_id,
+        'Answer to your issue from {first_name}:\n'.format(first_name=msg.from_user.first_name) +
+        '<i>{message}</i>'.format(message=msg.text),
+        parse_mode='HTML'
+    )
 
 
 @bot.message_handler(commands=['get_users'], func=lambda msg: msg.from_user.id in config.DEV_ID)

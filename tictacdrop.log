@@ -985,3 +985,68 @@
 2020-08-15 18:51:09,371 - utils - INFO - Deleting messages with keys `['first_message']` from id 934450726.
 2020-08-15 18:51:09,564 - utils - INFO - Filtering messages with keys `['first_message']` from id 934450726.
 2020-08-16 10:26:24,507 - __main__ - INFO - New /game command from id: 662834330.
+2020-08-16 10:30:06,786 - __main__ - INFO - New /start command from id: 934450726.
+2020-08-16 10:30:09,867 - utils - INFO - User id: 934450726 is in DB.
+2020-08-16 10:30:27,695 - __main__ - INFO - New /start command from id: 662834330.
+2020-08-16 10:30:29,832 - utils - INFO - Saving user id: 662834330.
+2020-08-16 10:30:32,595 - __main__ - INFO - Got callback person from id: 662834330.
+2020-08-16 10:30:33,842 - __main__ - INFO - Starting PVP game for id: 662834330.
+2020-08-16 10:30:33,843 - utils - INFO - Setting state of id: 662834330 to IN_PVP_GAME.
+2020-08-16 10:30:34,139 - utils - INFO - No games found.
+2020-08-16 10:30:34,139 - utils - INFO - id 662834330 creates new game.
+2020-08-16 10:30:34,148 - __main__ - INFO - Deleting message Hello, welcome to TicTacDrop! from chat 662834330.
+2020-08-16 10:30:35,216 - __main__ - INFO - New /start command from id: 934450726.
+2020-08-16 10:30:35,675 - utils - INFO - Saving user id: 934450726.
+2020-08-16 10:30:36,589 - __main__ - INFO - Got callback person from id: 934450726.
+2020-08-16 10:30:36,907 - __main__ - INFO - Starting PVP game for id: 934450726.
+2020-08-16 10:30:36,909 - utils - INFO - Setting state of id: 934450726 to IN_PVP_GAME.
+2020-08-16 10:30:37,529 - utils - INFO - User id 934450726 is looking for game.
+2020-08-16 10:30:37,546 - utils - INFO - Sending first game message for 662834330 and 934450726
+2020-08-16 10:30:38,230 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 662834330.
+2020-08-16 10:30:38,643 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 662834330.
+2020-08-16 10:30:39,688 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 934450726.
+2020-08-16 10:30:40,892 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 934450726.
+2020-08-16 10:30:40,904 - __main__ - INFO - Deleting message Hello, welcome to TicTacDrop! from chat 934450726.
+2020-08-16 10:31:58,630 - __main__ - INFO - Got callback 4-2 from id: 662834330.
+2020-08-16 10:31:58,631 - utils - INFO - Proceeding click from id: 662834330 to set (4, 2) value.
+2020-08-16 10:31:58,646 - utils - INFO - Deleting messages with keys `['first_message']` from id 662834330.
+2020-08-16 10:32:00,454 - utils - INFO - Filtering messages with keys `['first_message']` from id 662834330.
+2020-08-16 10:32:00,472 - utils - INFO - Deleting messages with keys `['first_message']` from id 934450726.
+2020-08-16 10:32:01,070 - utils - INFO - Filtering messages with keys `['first_message']` from id 934450726.
+2020-08-16 10:32:15,529 - __main__ - INFO - Got callback 4-2 from id: 934450726.
+2020-08-16 10:32:15,529 - utils - INFO - Proceeding click from id: 934450726 to set (4, 2) value.
+2020-08-16 10:32:15,554 - utils - INFO - Deleting messages with keys `['first_message']` from id 934450726.
+2020-08-16 10:32:15,555 - utils - INFO - Filtering messages with keys `['first_message']` from id 934450726.
+2020-08-16 10:32:15,556 - utils - INFO - Deleting messages with keys `['first_message']` from id 662834330.
+2020-08-16 10:32:15,556 - utils - INFO - Filtering messages with keys `['first_message']` from id 662834330.
+2020-08-16 10:32:19,523 - __main__ - INFO - Got callback 3-2 from id: 662834330.
+2020-08-16 10:32:19,524 - utils - INFO - Proceeding click from id: 662834330 to set (3, 2) value.
+2020-08-16 10:32:23,210 - __main__ - INFO - Got callback 5-1 from id: 934450726.
+2020-08-16 10:32:23,210 - utils - INFO - Proceeding click from id: 934450726 to set (5, 1) value.
+2020-08-16 10:32:28,420 - __main__ - INFO - Got callback 4-1 from id: 662834330.
+2020-08-16 10:32:28,421 - utils - INFO - Proceeding click from id: 662834330 to set (4, 1) value.
+2020-08-16 10:32:33,947 - __main__ - INFO - Got callback 5-0 from id: 934450726.
+2020-08-16 10:32:33,948 - utils - INFO - Proceeding click from id: 934450726 to set (5, 0) value.
+2020-08-16 10:32:38,862 - __main__ - INFO - Got callback 2-3 from id: 662834330.
+2020-08-16 10:32:38,862 - utils - INFO - Proceeding click from id: 662834330 to set (2, 3) value.
+2020-08-16 10:32:41,017 - __main__ - INFO - Got callback 3-3 from id: 934450726.
+2020-08-16 10:32:41,017 - utils - INFO - Proceeding click from id: 934450726 to set (3, 3) value.
+2020-08-16 10:32:46,237 - __main__ - INFO - Got callback 2-3 from id: 662834330.
+2020-08-16 10:32:46,237 - utils - INFO - Proceeding click from id: 662834330 to set (2, 3) value.
+2020-08-16 10:32:55,133 - __main__ - INFO - Got callback 4-4 from id: 934450726.
+2020-08-16 10:32:55,133 - utils - INFO - Proceeding click from id: 934450726 to set (4, 4) value.
+2020-08-16 10:33:01,902 - __main__ - INFO - Got callback 2-3 from id: 662834330.
+2020-08-16 10:33:01,903 - utils - INFO - Proceeding click from id: 662834330 to set (2, 3) value.
+2020-08-16 10:34:07,122 - __main__ - INFO - Got callback 4-4 from id: 662834330.
+2020-08-16 10:34:07,122 - utils - INFO - Proceeding click from id: 662834330 to set (4, 4) value.
+2020-08-16 10:34:09,479 - __main__ - INFO - Got callback 3-4 from id: 934450726.
+2020-08-16 10:34:09,480 - utils - INFO - Proceeding click from id: 934450726 to set (3, 4) value.
+2020-08-16 10:34:13,389 - __main__ - INFO - Got callback 2-4 from id: 662834330.
+2020-08-16 10:34:13,389 - utils - INFO - Proceeding click from id: 662834330 to set (2, 4) value.
+2020-08-16 10:34:15,421 - __main__ - INFO - Got callback 2-4 from id: 934450726.
+2020-08-16 10:34:15,421 - utils - INFO - Proceeding click from id: 934450726 to set (2, 4) value.
+2020-08-16 10:34:21,767 - __main__ - INFO - Got callback 1-4 from id: 662834330.
+2020-08-16 10:34:21,768 - utils - INFO - Proceeding click from id: 662834330 to set (1, 4) value.
+2020-08-16 10:34:58,129 - utils - INFO - Game 1 ended with winner 662834330
+2020-08-16 11:07:07,028 - __main__ - INFO - New /start command from id: 934450726.
+2020-08-16 11:07:07,359 - utils - INFO - User id: 934450726 is in DB.
