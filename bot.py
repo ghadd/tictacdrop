@@ -154,7 +154,11 @@ def leave(msg: telebot.types.Message):
 
 
 @bot.message_handler(commands=['issue'], content_types=['text'])
-def issue(msg):
+def issue(msg: telebot.types.Message) -> None:
+    """
+    Reports an issue to DEV_ID users
+    :param msg: incoming message update
+    """
     data = msg.text.split()
     if len(data) == 1:
         bot.send_message(
@@ -183,7 +187,11 @@ def issue(msg):
 
 
 @bot.message_handler(func=lambda msg: msg.from_user.id in config.DEV_ID and msg.reply_to_message)
-def reply_to_issue(msg):
+def reply_to_issue(msg: telebot.types.Message) -> None:
+    """
+    DEV_ID users reply to issues
+    :param msg: incoming message update
+    """
     index = msg.reply_to_message.text.index('ID') + 4
     receiver_id = int(msg.reply_to_message.text[index:index + 9])
 
