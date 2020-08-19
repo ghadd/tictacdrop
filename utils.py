@@ -12,6 +12,8 @@ from models import states
 from models.game import Game
 from models.user import User
 
+import ai
+
 # introducing a logger
 logger = logger.get_logger(__name__)
 
@@ -458,14 +460,12 @@ def has_winner(field: List[List[int]]) -> Tuple[bool, Optional[Tuple[int, int]],
         for j in range(len(field[i])):
             if field[i][j] == 0:
                 continue
-            for k in range(len(dirs)):
-                dr = dirs[k]
+            for dr in dirs:
                 # simply checking an equality of 4 contiguous elements on field
                 try:
                     if field[i][j] == field[i + dr[0]][j + dr[1]] == \
                             field[i + 2 * dr[0]][j + 2 * dr[1]] == \
-                            field[i + 3 * dr[0]][j + 3 * dr[1]] and \
-                            j + 3 * dr[1] > 0 and i + 3 * dr[0] > 0:
+                            field[i + 3 * dr[0]][j + 3 * dr[1]] :
                         return True, (i, j), dr
                 # to skip border cases without making some stupidly clever algorithm
                 except IndexError:
@@ -511,9 +511,9 @@ def handle_game_field_click(bot: telebot.TeleBot, cb: telebot.types.CallbackQuer
 
 
 def handle_ai_game_click(bot, cb, y):
+
     game, user, _ = get_game_user_opponent(cb.from_user)
     field = json.loads(game.field)
-
     if field[0][y] != 0:
         bot.answer_callback_query(
             cb.id,
@@ -528,24 +528,35 @@ def handle_ai_game_click(bot, cb, y):
 
     field[k][y] = 1
 
+    winner, win_coords, win_dir = has_winner(field)
+    if winner:
+        logger.info(f'Game {game} ended with winner {user.user_id}')
+        handle_win(bot, field, game, user, _, win_coords, win_dir, 1)
+        return
+    else:
+        send_updated_field(bot, field, game, _)
+
     #TODO AI logic
+    import math
+    col, minimax_score = ai.minimax(field, 5, -math.inf, math.inf, True)
+    if col == None:
+        bot.send_message(user.user_id, "Error!")
+    else:
+        field[ai.get_next_open_row(field, col)][col] = 2
 
     game.field = json.dumps(field)
     update_game(game)
 
-    #TODO handling for AI-games
-
-    # winner, win_coords, win_dir = has_winner(field)
-    # if winner:
-    #     if win_dir == (0, 0):
-    #         logger.info(f'Game {game} ended with draw.')
-    #         handle_draw(bot, game, user, _)
-    #     else:
-    #         logger.info(f'Game {game} ended with winner {user.user_id}')
-    #         handle_win(bot, field, game, user, _, win_coords, win_dir)
-    # else:
-    #     send_updated_field(bot, field, game, _)
-
+    winner, win_coords, win_dir = has_winner(field)
+    if winner:
+        if win_dir == (0, 0):
+            logger.info(f'Game {game} ended with draw.')
+            handle_draw(bot, game, user, _)
+        else:
+            logger.info(f'Game {game} ended with winner AI')
+            handle_win(bot, field, game, user, _, win_coords, win_dir, 2)
+    else:
+        send_updated_field(bot, field, game, _)
 
 
 def handle_pvp_game_click(bot, cb, y):
@@ -621,25 +632,30 @@ def handle_draw(bot: telebot.TeleBot, game: Game, user: User, opponent: User) ->
     field = [[3 for _ in range(config.COLS)] for _ in range(config.ROWS)]
 
     send_updated_field(bot, field, game, opponent)
-    for u in [user, opponent]:
+    Game.delete_by_id(game.id)
+
+    if opponent:
+        for u in [user, opponent]:
+            bot.send_message(
+                u.user_id,
+                "It's a draw."
+            )
+        user.draws += 1
+        opponent.draws += 1
+        opponent.state = states.USER_IN_MENU
+        update_user(opponent)
+    else:
         bot.send_message(
-            u.user_id,
+            user.user_id,
             "It's a draw."
         )
 
-    Game.delete_by_id(game.id)
-
-    user.draws += 1
-    opponent.draws += 1
     user.state = states.USER_IN_MENU
-    opponent.state = states.USER_IN_MENU
-
     update_user(user)
-    update_user(opponent)
 
 
 def handle_win(bot: telebot.TeleBot, field: List[List[int]], game: Game, user: User, opponent: User,
-               win_coords: Tuple[int, int], win_dir: Tuple[int, int]) -> None:
+               win_coords: Tuple[int, int], win_dir: Tuple[int, int], player = None) -> None:
     """
     Handles winning position in field of given game
     :param bot: Bot object that manages all the stuff
@@ -649,26 +665,34 @@ def handle_win(bot: telebot.TeleBot, field: List[List[int]], game: Game, user: U
     :param opponent: Game' player
     :param win_coords: (x, y) from where the winning position starts
     :param win_dir: (delta_x, delta_y) of where the winning line goes
+    :param player: optional (1 - user, 2 - ai)
     """
     for i in range(4):
         field[win_coords[0] + win_dir[0] * i][win_coords[1] + win_dir[1] * i] = 3
     Game.delete_by_id(game.id)
 
-    user.wins += 1
+    if opponent:
+        user.wins += 1
+        opponent.losses += 1
+        opponent.state = states.USER_IN_MENU
+        update_user(opponent)
     user.state = states.USER_IN_MENU
     update_user(user)
-    opponent.losses += 1
-    opponent.state = states.USER_IN_MENU
-    update_user(opponent)
 
-    bot.send_message(
-        user.user_id,
-        "Congratulations! You won."
-    )
-    bot.send_message(
-        opponent.user_id,
-        "Oh. You lost."
-    )
+    if opponent:
+        bot.send_message(
+            user.user_id,
+            "Congratulations! You won."
+        )
+        bot.send_message(
+            opponent.user_id,
+            "Oh. You lost."
+        )
+    else:
+        bot.send_message(
+            user.user_id,
+            "Congratulations! You won." if player == 1 else "Oh. You lost."
+        )
 
     send_updated_field(bot, field, game, opponent)
 
@@ -681,14 +705,21 @@ def send_updated_field(bot: telebot.TeleBot, field: List[List[int]], game: Game,
     :param game: Game object, where update is needed
     :param opponent: Symbolizes a player, whose turn is next
     """
-    for i in range(2):
-        bot.edit_message_text(
-            chat_id=[game.user1, game.user2][i].user_id,
-            message_id=[game.message1, game.message2][i],
-            text='Your turn' if [game.user1, game.user2][i] == opponent else 'Opponents turn.'
-        )
+    if opponent:
+        for i in range(2):
+            bot.edit_message_text(
+                chat_id=[game.user1, game.user2][i].user_id,
+                message_id=[game.message1, game.message2][i],
+                text='Your turn' if [game.user1, game.user2][i] == opponent else 'Opponents turn.'
+            )
+            bot.edit_message_reply_markup(
+                [game.user1, game.user2][i].user_id,
+                [game.message1, game.message2][i],
+                reply_markup=buttons.get_field_markup(field)
+            )
+    else:
         bot.edit_message_reply_markup(
-            [game.user1, game.user2][i].user_id,
-            [game.message1, game.message2][i],
+            game.user1.user_id,
+            game.message1,
             reply_markup=buttons.get_field_markup(field)
         )
