@@ -2,6 +2,9 @@ TOKEN = '906364839:AAHkdc5YJUFJhhxSGeOAuyue6DE9rINaAFE'
 COLS = 7
 ROWS = 6
 
+HUMAN_PLAYER = 1
+AI_PLAYER = 2
+
 # for special functionality
 DEV_ID = [662834330, 408970630, ]
 

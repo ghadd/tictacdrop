@@ -536,13 +536,11 @@ def handle_ai_game_click(bot, cb, y):
     else:
         send_updated_field(bot, field, game, _)
 
-    #TODO AI logic
-    import math
-    col, minimax_score = ai.minimax(field, 5, -math.inf, math.inf, True)
-    if col == None:
-        bot.send_message(user.user_id, "Error!")
-    else:
-        field[ai.get_next_open_row(field, col)][col] = 2
+    col = ai.MiniMaxAlphaBeta(field, 5, 2)
+    k = config.ROWS - 1
+    while field[k][col] != 0:
+        k -= 1
+    field[k][col] = 2
 
     game.field = json.dumps(field)
     update_game(game)
