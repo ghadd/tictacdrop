@@ -2,136 +2,136 @@ from config import *
 from random import shuffle
 from copy import deepcopy
 
-def isColumnValid(Board, Col):
-    return Board[0][Col] == 0
 
-#check the search range for rows and columns
-def isRangeValid(row, col):
+def is_column_valid(board, col):
+    return board[0][col] == 0
+
+
+# check the search range for rows and columns
+def is_range_valid(row, col):
     return row in range(ROWS) and col in range(COLS)
 
-#return all valid moves (empty columns) from the board
-def getValidMoves(Board):
-    return [col for col in range(COLS) if isColumnValid(Board, col)]
+
+# return all valid moves (empty columns) from the board
+def get_valid_moves(board):
+    return [col for col in range(COLS) if is_column_valid(board, col)]
 
 
-def makeMove(board, col, player):
-    #deepcopy is used to take acopy of current board and not affecting the original one
-    tempBoard = deepcopy(board)
+def make_move(board, col, player):
+    # deepcopy is used to take a copy of current board and not affecting the original one
+    temp_board = deepcopy(board)
     for row in reversed(range(ROWS)):
-        if tempBoard[row][col] == 0:
-            tempBoard[row][col] = player
-            return tempBoard, row, col
-
-def isValidMove(board, col):
-    for row in range(ROWS):
-        if board[row][col] == 0:
-            return True
-    return False
+        if temp_board[row][col] == 0:
+            temp_board[row][col] = player
+            return temp_board, row, col
 
 
-def countSequence(board, player, length):
+def count_sequence(board, player, length):
     """ Given the board state , the current player and the length of Sequence you want to count
         Return the count of Sequences that have the give length
     """
-    def verticalSeq(row, col):
+
+    def vertical_seq(row, col):
         """Return 1 if it found a vertical sequence with the required length 
         """
         count = 0
-        for rowIndex in range(row, ROWS):
-            if board[rowIndex][col] == board[row][col]:
+        for row_index in range(row, ROWS):
+            if board[row_index][col] == board[row][col]:
                 count += 1
             else:
                 break
         return int(count >= length)
 
-    def horizontalSeq(row, col):
+    def horizontal_seq(row, col):
         """Return 1 if it found a horizontal sequence with the required length 
         """
         count = 0
-        for colIndex in range(col, COLS):
-            if board[row][colIndex] == board[row][col]:
+        for col_index in range(col, COLS):
+            if board[row][col_index] == board[row][col]:
                 count += 1
             else:
                 break
         return int(count >= length)
 
-    def negDiagonalSeq(row, col):
+    def neg_diagonal_seq(row, col):
         """Return 1 if it found a negative diagonal sequence with the required length 
         """
         count = 0
-        colIndex = col
-        for rowIndex in range(row, -1, -1):
-            if colIndex > ROWS:
+        col_index = col
+        for row_index in reversed(range(row)):
+            if col_index > ROWS:
                 break
-            elif board[rowIndex][colIndex] == board[row][col]:
+            elif board[row_index][col_index] == board[row][col]:
                 count += 1
             else:
                 break
-            colIndex += 1 # increment column when row is incremented
+            col_index += 1  # increment column when row is incremented
         return int(count >= length)
 
-    def posDiagonalSeq(row, col):
+    def pos_diagonal_seq(row, col):
         """Return 1 if it found a positive diagonal sequence with the required length 
         """
         count = 0
-        colIndex = col
-        for rowIndex in range(row, ROWS):
-            if colIndex > ROWS:
+        col_index = col
+        for row_index in range(row, ROWS):
+            if col_index > ROWS:
                 break
-            elif board[rowIndex][colIndex] == board[row][col]:
+            elif board[row_index][col_index] == board[row][col]:
                 count += 1
             else:
                 break
-            colIndex += 1 # increment column when row incremented
+            col_index += 1  # increment column when row incremented
         return int(count >= length)
 
-    totalCount = 0
+    total_count = 0
     # for each piece in the board...
     for row in range(ROWS):
         for col in range(COLS):
             # ...that is of the player we're looking for...
             if board[row][col] == player:
                 # check if a vertical streak starts at (row, col)
-                totalCount += verticalSeq(row, col)
+                total_count += vertical_seq(row, col)
                 # check if a horizontal four-in-a-row starts at (row, col)
-                totalCount += horizontalSeq(row, col)
+                total_count += horizontal_seq(row, col)
                 # check if a diagonal (both +ve and -ve slopes) four-in-a-row starts at (row, col)
-                totalCount += (posDiagonalSeq(row, col) + negDiagonalSeq(row, col))
+                total_count += (pos_diagonal_seq(row, col) + neg_diagonal_seq(row, col))
     # return the sum of sequences of length 'length'
-    return totalCount
+    return total_count
 
-def utilityValue(board, player):
-    """ A utility function to evaluate the state of the board and report it to the calling function,
+
+def utility_value(board, player):
+    """
+        A utility function to evaluate the state of the board and report it to the calling function,
         utility value is defined as the  score of the player who calles the function - score of opponent player,
         The score of any player is the sum of each sequence found for this player scalled by large factor for
         sequences with higher lengths.
     """
     opponent = AI_PLAYER if player == HUMAN_PLAYER else HUMAN_PLAYER
 
-    playerScore    = countSequence(board, player, 4) * 99999 + \
-                     countSequence(board, player, 3) * 999 + \
-                     countSequence(board, player, 2) * 99
+    player_score = count_sequence(board, player, 4) * 99999 + \
+                  count_sequence(board, player, 3) * 999 + \
+                  count_sequence(board, player, 2) * 99
 
-    opponentfours = countSequence(board, opponent, 4)
-    opponentScore  = opponentfours * 99999 + \
-                     countSequence(board, opponent, 3) * 999 + \
-                     countSequence(board, opponent, 2) * 99
+    opponent_fours = count_sequence(board, opponent, 4)
+    opponent_score = opponent_fours * 99999 + \
+                    count_sequence(board, opponent, 3) * 999 + \
+                    count_sequence(board, opponent, 2) * 99
 
-    return float('-inf') if opponentfours > 0 else playerScore - opponentScore
+    return float('-inf') if opponent_fours > 0 else player_score - opponent_score
 
 
-def gameIsOver(board):
+def game_is_over(board):
     """Check if there is a winner in the current state of the board
     """
-    return countSequence(board, HUMAN_PLAYER, 4) >= 1 or countSequence(board, AI_PLAYER, 4) >= 1
+    return count_sequence(board, HUMAN_PLAYER, 4) >= 1 or count_sequence(board, AI_PLAYER, 4) >= 1
 
 
-def MiniMaxAlphaBeta(board, depth, player):
+def minimax_alpha_beta(board, depth, player):
     # get array of possible moves
-    validMoves = getValidMoves(board)
-    shuffle(validMoves)
-    bestMove = validMoves[0]
-    bestScore = float("-inf")
+    valid_moves = get_valid_moves(board)
+    shuffle(valid_moves)
+    best_move = valid_moves[0]
+    best_score = float("-inf")
 
     # initial alpha & beta values for alpha-beta pruning
     alpha = float("-inf")
@@ -140,65 +140,65 @@ def MiniMaxAlphaBeta(board, depth, player):
     opponent = HUMAN_PLAYER if player == AI_PLAYER else AI_PLAYER
 
     # go through all of those boards
-    for move in validMoves:
+    for move in valid_moves:
         # create new board from move
-        tempBoard = makeMove(board, move, player)[0]
+        temp_board = make_move(board, move, player)[0]
         # call min on that new board
-        boardScore = minimizeBeta(tempBoard, depth - 1, alpha, beta, player, opponent)
-        if boardScore > bestScore:
-            bestScore = boardScore
-            bestMove = move
-    return bestMove
+        board_score = minimize_beta(temp_board, depth - 1, alpha, beta, player, opponent)
+        if board_score > best_score:
+            best_score = board_score
+            best_move = move
+    return best_move
 
 
-def minimizeBeta(board, depth, a, b, player, opponent):
-    validMoves = []
+def minimize_beta(board, depth, a, b, player, opponent):
+    valid_moves = []
     for col in range(7):
         # if column col is a legal move...
-        if isValidMove(board, col):
+        if is_column_valid(board, col):
             # make the move in column col for curr_player
-            temp = makeMove(board, col, player)[2]
-            validMoves.append(temp)
+            temp = make_move(board, col, player)[2]
+            valid_moves.append(temp)
 
     # check to see if game over
-    if depth == 0 or len(validMoves) == 0 or gameIsOver(board):
-        return utilityValue(board, player)
+    if depth == 0 or len(valid_moves) == 0 or game_is_over(board):
+        return utility_value(board, player)
 
-    validMoves = getValidMoves(board)
+    valid_moves = get_valid_moves(board)
     beta = b
 
     # if end of tree evaluate scores
-    for move in validMoves:
-        boardScore = float("inf")
+    for move in valid_moves:
+        board_score = float("inf")
         # else continue down tree as long as ab conditions met
         if a < beta:
-            tempBoard = makeMove(board, move, opponent)[0]
-            boardScore = maximizeAlpha(tempBoard, depth - 1, a, beta, player, opponent)
+            temp_board = make_move(board, move, opponent)[0]
+            board_score = maximize_alpha(temp_board, depth - 1, a, beta, player, opponent)
 
-        beta = min(beta, boardScore)
+        beta = min(beta, board_score)
 
     return beta
 
 
-def maximizeAlpha(board, depth, a, b, player, opponent):
-    validMoves = []
+def maximize_alpha(board, depth, a, b, player, opponent):
+    valid_moves = []
     for col in range(7):
         # if column col is a legal move...
-        if isValidMove(board, col):
+        if is_column_valid(board, col):
             # make the move in column col for curr_player
-            temp = makeMove(board, col, player)[2]
-            validMoves.append(temp)
+            temp = make_move(board, col, player)[2]
+            valid_moves.append(temp)
     # check to see if game over
-    if depth == 0 or len(validMoves) == 0 or gameIsOver(board):
-        return utilityValue(board, player)
+    if depth == 0 or len(valid_moves) == 0 or game_is_over(board):
+        return utility_value(board, player)
 
     alpha = a
     # if end of tree, evaluate scores
-    for move in validMoves:
-        boardScore = float("-inf")
+    for move in valid_moves:
+        board_score = float("-inf")
         if alpha < b:
-            tempBoard = makeMove(board, move, player)[0]
-            boardScore = minimizeBeta(tempBoard, depth - 1, alpha, b, player, opponent)
+            temp_board = make_move(board, move, player)[0]
+            board_score = minimize_beta(temp_board, depth - 1, alpha, b, player, opponent)
 
-        alpha = max(alpha, boardScore)
+        alpha = max(alpha, board_score)
     return alpha

@@ -176,10 +176,6 @@ def handle_ai_game(bot: telebot.TeleBot, user: User) -> None:
     :param bot:
     :param user:
     """
-    bot.send_message(
-        user.user_id,
-        'In development...'
-    )
     logger.info(f'Setting state of id: {user.user_id} to IN_AI_GAME.')
     user.state = states.USER_IN_AI_GAME
     update_user(user)
@@ -536,7 +532,12 @@ def handle_ai_game_click(bot, cb, y):
     else:
         send_updated_field(bot, field, game, _)
 
-    col = ai.MiniMaxAlphaBeta(field, 5, 2)
+    bot.answer_callback_query(
+        cb.id,
+        "OK."
+    )
+
+    col = ai.minimax_alpha_beta(field, config.AI_DEPTH, 2)
     k = config.ROWS - 1
     while field[k][col] != 0:
         k -= 1

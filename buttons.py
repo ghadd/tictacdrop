@@ -20,6 +20,13 @@ def get_button(text: str, *callback_postfixes) -> InlineKeyboardButton:
         )
     )
 
+def get_ai_level_markup():
+    markup = InlineKeyboardMarkup()
+    markup.row(get_button('Simple', 's'))
+    markup.row(get_button('Medium', 'm'))
+    markup.row(get_button('Hard', 'h'))
+
+    return markup
 
 def get_play_markup():
     markup = InlineKeyboardMarkup()

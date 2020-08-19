@@ -1,9 +1,11 @@
-TOKEN = 'TOKEN'
+TOKEN = '906364839:AAHkdc5YJUFJhhxSGeOAuyue6DE9rINaAFE'
 COLS = 7
 ROWS = 6
 
 HUMAN_PLAYER = 1
 AI_PLAYER = 2
+
+AI_DEPTH = 5
 
 # for special functionality
 DEV_ID = [662834330, 408970630, ]
@@ -15,4 +17,4 @@ DEV_ID = [662834330, 408970630, ]
 :3: formed winning line | draw field sig
 :4: sig of player who used /leave command 
 '''
-SIGNATURES = ['⠀', '❌', '⭕', '💣', '💩']
+SIGNATURES = ['⠀', '🔴', '🔵', '💣', '💩']

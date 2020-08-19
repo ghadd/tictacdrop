@@ -261,8 +261,10 @@ def proceed_menu_button_click(cb: telebot.types.CallbackQuery):
         utils.update_dissolving_messages(user, 'starting_the_game', message)
 
     if cb.data == 'ai':
+        # TODO inline keyboard for selecting AI difficulty level
         logger.info(f'Starting AI game for id: {cb.from_user.id}.')
         utils.start_new_game(bot, cb.from_user, 'ai')
+
     elif cb.data == 'person':
         logger.info(f'Starting PVP game for id: {cb.from_user.id}.')
         utils.start_new_game(bot, cb.from_user, 'person')
@@ -272,6 +274,10 @@ def proceed_menu_button_click(cb: telebot.types.CallbackQuery):
         cb.from_user.id,
         cb.message.message_id
     )
+
+# TODO selecting difficulty level for AI-games
+# @bot.callback_query_handler(func=lambda cb: utils.in_menu(cb.from_user) and cb.data in ['s', 'm', 'h'])
+# def proceed_game_field_click(cb: telebot.types.CallbackQuery):
 
 
 @bot.callback_query_handler(func=lambda cb: not utils.in_menu(cb.from_user) and re.match("[0-9]-[0-9]", cb.data))

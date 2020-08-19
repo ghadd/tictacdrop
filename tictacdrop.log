@@ -2770,3 +2770,946 @@
 2020-08-19 14:37:37,523 - __main__ - INFO - Got callback 4-3 from id: 408970630.
 2020-08-19 14:37:37,523 - utils - INFO - Proceeding click from id: 408970630 to set (4, 3) value.
 2020-08-19 14:37:38,249 - utils - INFO - Game 1 ended with winner AI
+2020-08-19 14:55:05,960 - __main__ - INFO - New /game command from id: 408970630.
+2020-08-19 14:55:08,467 - __main__ - INFO - Got callback ai from id: 408970630.
+2020-08-19 14:55:08,567 - __main__ - INFO - Starting AI game for id: 408970630.
+2020-08-19 14:55:08,686 - utils - INFO - Setting state of id: 408970630 to IN_AI_GAME.
+2020-08-19 14:55:08,692 - utils - INFO - Sending first AI game message for 408970630
+2020-08-19 14:55:08,900 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-19 14:55:08,989 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-19 14:55:08,992 - __main__ - INFO - Deleting message Wanna play? from chat 408970630.
+2020-08-19 14:55:10,978 - __main__ - INFO - Got callback 5-3 from id: 408970630.
+2020-08-19 14:55:10,978 - utils - INFO - Proceeding click from id: 408970630 to set (5, 3) value.
+2020-08-19 14:55:13,232 - __main__ - INFO - Got callback 5-2 from id: 408970630.
+2020-08-19 14:55:13,232 - utils - INFO - Proceeding click from id: 408970630 to set (5, 2) value.
+2020-08-19 14:55:15,337 - __main__ - INFO - Got callback 4-4 from id: 408970630.
+2020-08-19 14:55:15,342 - utils - INFO - Proceeding click from id: 408970630 to set (4, 4) value.
+2020-08-19 14:55:17,635 - __main__ - INFO - Got callback 5-0 from id: 408970630.
+2020-08-19 14:55:17,635 - utils - INFO - Proceeding click from id: 408970630 to set (5, 0) value.
+2020-08-19 14:55:20,868 - __main__ - INFO - Got callback 3-1 from id: 408970630.
+2020-08-19 14:55:20,868 - utils - INFO - Proceeding click from id: 408970630 to set (3, 1) value.
+2020-08-19 14:55:24,007 - __main__ - INFO - Got callback 4-0 from id: 408970630.
+2020-08-19 14:55:24,012 - utils - INFO - Proceeding click from id: 408970630 to set (4, 0) value.
+2020-08-19 14:55:26,988 - __main__ - INFO - Got callback 2-1 from id: 408970630.
+2020-08-19 14:55:26,989 - utils - INFO - Proceeding click from id: 408970630 to set (2, 1) value.
+2020-08-19 14:55:29,543 - __main__ - INFO - Got callback 1-2 from id: 408970630.
+2020-08-19 14:55:29,543 - utils - INFO - Proceeding click from id: 408970630 to set (1, 2) value.
+2020-08-19 14:55:33,590 - __main__ - INFO - Got callback 2-3 from id: 408970630.
+2020-08-19 14:55:33,591 - utils - INFO - Proceeding click from id: 408970630 to set (2, 3) value.
+2020-08-19 14:55:43,302 - __main__ - INFO - Got callback 5-5 from id: 408970630.
+2020-08-19 14:55:43,302 - utils - INFO - Proceeding click from id: 408970630 to set (5, 5) value.
+2020-08-19 14:55:44,453 - utils - INFO - Game 1 ended with winner AI
+2020-08-19 14:55:47,568 - __main__ - INFO - New /game command from id: 408970630.
+2020-08-19 14:55:48,483 - __main__ - INFO - Got callback ai from id: 408970630.
+2020-08-19 14:55:48,591 - __main__ - INFO - Starting AI game for id: 408970630.
+2020-08-19 14:55:48,697 - utils - INFO - Setting state of id: 408970630 to IN_AI_GAME.
+2020-08-19 14:55:48,703 - utils - INFO - Sending first AI game message for 408970630
+2020-08-19 14:55:48,915 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-19 14:55:48,992 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-19 14:55:48,995 - __main__ - INFO - Deleting message Wanna play? from chat 408970630.
+2020-08-19 14:55:50,633 - __main__ - INFO - Got callback 5-3 from id: 408970630.
+2020-08-19 14:55:50,633 - utils - INFO - Proceeding click from id: 408970630 to set (5, 3) value.
+2020-08-19 14:56:12,015 - __main__ - INFO - Got callback 5-2 from id: 408970630.
+2020-08-19 14:56:12,015 - utils - INFO - Proceeding click from id: 408970630 to set (5, 2) value.
+2020-08-19 14:56:15,675 - __main__ - INFO - Got callback 4-4 from id: 408970630.
+2020-08-19 14:56:15,675 - utils - INFO - Proceeding click from id: 408970630 to set (4, 4) value.
+2020-08-19 14:56:18,937 - __main__ - INFO - Got callback 3-1 from id: 408970630.
+2020-08-19 14:56:18,937 - utils - INFO - Proceeding click from id: 408970630 to set (3, 1) value.
+2020-08-19 14:56:22,145 - __main__ - INFO - Got callback 4-3 from id: 408970630.
+2020-08-19 14:56:22,146 - utils - INFO - Proceeding click from id: 408970630 to set (4, 3) value.
+2020-08-19 14:56:25,425 - __main__ - INFO - Got callback 2-2 from id: 408970630.
+2020-08-19 14:56:25,425 - utils - INFO - Proceeding click from id: 408970630 to set (2, 2) value.
+2020-08-19 14:56:41,790 - __main__ - INFO - Got callback 5-5 from id: 408970630.
+2020-08-19 14:56:41,790 - utils - INFO - Proceeding click from id: 408970630 to set (5, 5) value.
+2020-08-19 14:56:47,287 - __main__ - INFO - Got callback 2-3 from id: 408970630.
+2020-08-19 14:56:47,287 - utils - INFO - Proceeding click from id: 408970630 to set (2, 3) value.
+2020-08-19 14:56:50,788 - __main__ - INFO - Got callback 3-0 from id: 408970630.
+2020-08-19 14:56:50,788 - utils - INFO - Proceeding click from id: 408970630 to set (3, 0) value.
+2020-08-19 14:57:07,363 - __main__ - INFO - Got callback 3-4 from id: 408970630.
+2020-08-19 14:57:07,368 - utils - INFO - Proceeding click from id: 408970630 to set (3, 4) value.
+2020-08-19 14:57:09,200 - utils - INFO - Game 1 ended with winner AI
+2020-08-19 14:57:13,901 - __main__ - INFO - New /game command from id: 408970630.
+2020-08-19 14:57:14,986 - __main__ - INFO - Got callback ai from id: 408970630.
+2020-08-19 14:57:15,094 - __main__ - INFO - Starting AI game for id: 408970630.
+2020-08-19 14:57:15,200 - utils - INFO - Setting state of id: 408970630 to IN_AI_GAME.
+2020-08-19 14:57:15,207 - utils - INFO - Sending first AI game message for 408970630
+2020-08-19 14:57:15,420 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-19 14:57:15,500 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-19 14:57:15,503 - __main__ - INFO - Deleting message Wanna play? from chat 408970630.
+2020-08-19 14:57:17,633 - __main__ - INFO - Got callback 5-3 from id: 408970630.
+2020-08-19 14:57:17,633 - utils - INFO - Proceeding click from id: 408970630 to set (5, 3) value.
+2020-08-19 14:57:20,674 - __main__ - INFO - Got callback 5-4 from id: 408970630.
+2020-08-19 14:57:20,674 - utils - INFO - Proceeding click from id: 408970630 to set (5, 4) value.
+2020-08-19 14:57:22,956 - __main__ - INFO - Got callback 3-1 from id: 408970630.
+2020-08-19 14:57:22,956 - utils - INFO - Proceeding click from id: 408970630 to set (3, 1) value.
+2020-08-19 14:57:29,411 - __main__ - INFO - Got callback 3-2 from id: 408970630.
+2020-08-19 14:57:29,411 - utils - INFO - Proceeding click from id: 408970630 to set (3, 2) value.
+2020-08-19 14:57:37,115 - __main__ - INFO - Got callback 4-4 from id: 408970630.
+2020-08-19 14:57:37,115 - utils - INFO - Proceeding click from id: 408970630 to set (4, 4) value.
+2020-08-19 14:57:45,375 - __main__ - INFO - Got callback 3-3 from id: 408970630.
+2020-08-19 14:57:45,375 - utils - INFO - Proceeding click from id: 408970630 to set (3, 3) value.
+2020-08-19 14:57:55,903 - __main__ - INFO - Got callback 2-3 from id: 408970630.
+2020-08-19 14:57:55,904 - utils - INFO - Proceeding click from id: 408970630 to set (2, 3) value.
+2020-08-19 14:58:03,800 - __main__ - INFO - Got callback 3-1 from id: 408970630.
+2020-08-19 14:58:03,801 - utils - INFO - Proceeding click from id: 408970630 to set (3, 1) value.
+2020-08-19 14:58:08,631 - __main__ - INFO - Got callback 4-0 from id: 408970630.
+2020-08-19 14:58:08,631 - utils - INFO - Proceeding click from id: 408970630 to set (4, 0) value.
+2020-08-19 14:58:39,191 - __main__ - INFO - Got callback 3-0 from id: 408970630.
+2020-08-19 14:58:39,191 - utils - INFO - Proceeding click from id: 408970630 to set (3, 0) value.
+2020-08-19 14:58:39,196 - utils - INFO - Game 1 ended with winner 408970630
+2020-08-19 14:59:38,848 - __main__ - INFO - New /game command from id: 408970630.
+2020-08-19 14:59:43,146 - __main__ - INFO - Got callback ai from id: 408970630.
+2020-08-19 14:59:43,374 - __main__ - INFO - Starting AI game for id: 408970630.
+2020-08-19 14:59:43,496 - utils - INFO - Setting state of id: 408970630 to IN_AI_GAME.
+2020-08-19 14:59:43,502 - utils - INFO - Sending first AI game message for 408970630
+2020-08-19 14:59:44,017 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-19 14:59:44,157 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-19 14:59:44,161 - __main__ - INFO - Deleting message Wanna play? from chat 408970630.
+2020-08-19 15:00:12,516 - __main__ - INFO - Got callback 5-3 from id: 408970630.
+2020-08-19 15:00:12,516 - utils - INFO - Proceeding click from id: 408970630 to set (5, 3) value.
+2020-08-19 15:00:15,145 - __main__ - INFO - Got callback 4-3 from id: 408970630.
+2020-08-19 15:00:15,146 - utils - INFO - Proceeding click from id: 408970630 to set (4, 3) value.
+2020-08-19 15:00:18,704 - __main__ - INFO - Got callback 4-4 from id: 408970630.
+2020-08-19 15:00:18,704 - utils - INFO - Proceeding click from id: 408970630 to set (4, 4) value.
+2020-08-19 15:00:22,264 - __main__ - INFO - Got callback 1-3 from id: 408970630.
+2020-08-19 15:00:22,265 - utils - INFO - Proceeding click from id: 408970630 to set (1, 3) value.
+2020-08-19 15:00:26,231 - __main__ - INFO - Got callback 2-4 from id: 408970630.
+2020-08-19 15:00:26,231 - utils - INFO - Proceeding click from id: 408970630 to set (2, 4) value.
+2020-08-19 15:00:30,699 - __main__ - INFO - Got callback 4-6 from id: 408970630.
+2020-08-19 15:00:30,699 - utils - INFO - Proceeding click from id: 408970630 to set (4, 6) value.
+2020-08-19 15:00:34,456 - __main__ - INFO - Got callback 4-2 from id: 408970630.
+2020-08-19 15:00:34,456 - utils - INFO - Proceeding click from id: 408970630 to set (4, 2) value.
+2020-08-19 15:00:53,681 - __main__ - INFO - Got callback 5-5 from id: 408970630.
+2020-08-19 15:00:53,681 - utils - INFO - Proceeding click from id: 408970630 to set (5, 5) value.
+2020-08-19 15:00:54,772 - utils - INFO - Game 1 ended with winner AI
+2020-08-19 22:28:13,683 - __main__ - INFO - New /start command from id: 436072509.
+2020-08-19 22:28:14,062 - utils - INFO - Saving user id: 436072509.
+2020-08-19 22:28:18,667 - __main__ - INFO - Got callback person from id: 436072509.
+2020-08-19 22:28:19,314 - __main__ - INFO - Starting PVP game for id: 436072509.
+2020-08-19 22:28:19,316 - utils - INFO - Setting state of id: 436072509 to IN_PVP_GAME.
+2020-08-19 22:28:20,338 - utils - INFO - No games found.
+2020-08-19 22:28:20,338 - utils - INFO - id 436072509 creates new game.
+2020-08-19 22:28:20,342 - __main__ - INFO - Deleting message Hello, welcome to TicTacDrop! from chat 436072509.
+2020-08-19 22:28:40,913 - __main__ - INFO - New /game command from id: 436072509.
+2020-08-19 22:28:41,510 - __main__ - INFO - New /game command from id: 408970630.
+2020-08-19 22:28:43,128 - __main__ - INFO - Got callback person from id: 408970630.
+2020-08-19 22:28:43,263 - __main__ - INFO - Starting PVP game for id: 408970630.
+2020-08-19 22:28:43,265 - utils - INFO - Setting state of id: 408970630 to IN_PVP_GAME.
+2020-08-19 22:28:43,468 - utils - INFO - User id 408970630 is looking for game.
+2020-08-19 22:28:43,475 - utils - INFO - Sending first PVP game message for 436072509 and 408970630
+2020-08-19 22:28:43,754 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 436072509.
+2020-08-19 22:28:43,927 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 436072509.
+2020-08-19 22:28:44,165 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-19 22:28:44,338 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-19 22:28:44,343 - __main__ - INFO - Deleting message Wanna play? from chat 408970630.
+2020-08-19 22:28:48,565 - __main__ - INFO - Got callback 2-3 from id: 436072509.
+2020-08-19 22:28:48,566 - utils - INFO - Proceeding click from id: 436072509 to set (2, 3) value.
+2020-08-19 22:28:48,575 - utils - INFO - Deleting messages with keys `['first_message']` from id 436072509.
+2020-08-19 22:28:48,645 - utils - INFO - Filtering messages with keys `['first_message']` from id 436072509.
+2020-08-19 22:28:48,656 - utils - INFO - Deleting messages with keys `['first_message']` from id 408970630.
+2020-08-19 22:28:48,724 - utils - INFO - Filtering messages with keys `['first_message']` from id 408970630.
+2020-08-19 22:28:54,136 - __main__ - INFO - Got callback 2-3 from id: 436072509.
+2020-08-19 22:28:54,137 - utils - INFO - Proceeding click from id: 436072509 to set (2, 3) value.
+2020-08-19 22:29:03,928 - __main__ - INFO - Got callback 5-2 from id: 408970630.
+2020-08-19 22:29:03,928 - utils - INFO - Proceeding click from id: 408970630 to set (5, 2) value.
+2020-08-19 22:29:03,940 - utils - INFO - Deleting messages with keys `['first_message']` from id 408970630.
+2020-08-19 22:29:03,941 - utils - INFO - Filtering messages with keys `['first_message']` from id 408970630.
+2020-08-19 22:29:03,941 - utils - INFO - Deleting messages with keys `['first_message']` from id 436072509.
+2020-08-19 22:29:03,942 - utils - INFO - Filtering messages with keys `['first_message']` from id 436072509.
+2020-08-19 22:29:08,739 - __main__ - INFO - Got callback 3-3 from id: 436072509.
+2020-08-19 22:29:08,739 - utils - INFO - Proceeding click from id: 436072509 to set (3, 3) value.
+2020-08-19 22:29:13,142 - __main__ - INFO - Got callback 3-3 from id: 408970630.
+2020-08-19 22:29:13,142 - utils - INFO - Proceeding click from id: 408970630 to set (3, 3) value.
+2020-08-19 22:29:20,004 - __main__ - INFO - Got callback 0-1 from id: 436072509.
+2020-08-19 22:29:20,004 - utils - INFO - Proceeding click from id: 436072509 to set (0, 1) value.
+2020-08-19 22:29:37,410 - __main__ - INFO - Got callback 5-4 from id: 436072509.
+2020-08-19 22:29:37,411 - utils - INFO - Proceeding click from id: 436072509 to set (5, 4) value.
+2020-08-19 22:29:37,554 - __main__ - INFO - Got callback 5-4 from id: 408970630.
+2020-08-19 22:29:37,554 - utils - INFO - Proceeding click from id: 408970630 to set (5, 4) value.
+2020-08-19 22:30:23,286 - __main__ - INFO - Got callback 1-2 from id: 436072509.
+2020-08-19 22:30:23,286 - utils - INFO - Proceeding click from id: 436072509 to set (1, 2) value.
+2020-08-19 22:30:30,249 - __main__ - INFO - Got callback 4-4 from id: 408970630.
+2020-08-19 22:30:30,250 - utils - INFO - Proceeding click from id: 408970630 to set (4, 4) value.
+2020-08-19 22:30:37,519 - __main__ - INFO - Got callback 1-0 from id: 436072509.
+2020-08-19 22:30:37,520 - utils - INFO - Proceeding click from id: 436072509 to set (1, 0) value.
+2020-08-19 22:30:48,169 - __main__ - INFO - Got callback 4-1 from id: 408970630.
+2020-08-19 22:30:48,169 - utils - INFO - Proceeding click from id: 408970630 to set (4, 1) value.
+2020-08-19 22:30:53,801 - __main__ - INFO - Got callback 2-4 from id: 436072509.
+2020-08-19 22:30:53,802 - utils - INFO - Proceeding click from id: 436072509 to set (2, 4) value.
+2020-08-19 22:31:00,969 - __main__ - INFO - Got callback 5-5 from id: 408970630.
+2020-08-19 22:31:00,969 - utils - INFO - Proceeding click from id: 408970630 to set (5, 5) value.
+2020-08-19 22:31:04,144 - __main__ - INFO - Got callback 5-6 from id: 436072509.
+2020-08-19 22:31:04,144 - utils - INFO - Proceeding click from id: 436072509 to set (5, 6) value.
+2020-08-19 22:31:09,778 - __main__ - INFO - Got callback 3-2 from id: 408970630.
+2020-08-19 22:31:09,781 - utils - INFO - Proceeding click from id: 408970630 to set (3, 2) value.
+2020-08-19 22:31:17,865 - __main__ - INFO - Got callback 1-2 from id: 436072509.
+2020-08-19 22:31:17,909 - utils - INFO - Proceeding click from id: 436072509 to set (1, 2) value.
+2020-08-19 22:31:24,626 - __main__ - INFO - Got callback 3-1 from id: 408970630.
+2020-08-19 22:31:24,626 - utils - INFO - Proceeding click from id: 408970630 to set (3, 1) value.
+2020-08-19 22:31:33,738 - __main__ - INFO - Got callback 1-1 from id: 436072509.
+2020-08-19 22:31:33,738 - utils - INFO - Proceeding click from id: 436072509 to set (1, 1) value.
+2020-08-19 22:31:41,213 - __main__ - INFO - Got callback 2-3 from id: 408970630.
+2020-08-19 22:31:41,213 - utils - INFO - Proceeding click from id: 408970630 to set (2, 3) value.
+2020-08-19 22:31:54,555 - __main__ - INFO - Got callback 0-4 from id: 436072509.
+2020-08-19 22:31:54,555 - utils - INFO - Proceeding click from id: 436072509 to set (0, 4) value.
+2020-08-19 22:31:56,470 - __main__ - INFO - Got callback 1-4 from id: 408970630.
+2020-08-19 22:31:56,470 - utils - INFO - Proceeding click from id: 408970630 to set (1, 4) value.
+2020-08-19 22:31:56,562 - utils - INFO - Game 1 ended with winner 408970630
+2020-08-19 22:32:58,611 - __main__ - INFO - New /game command from id: 436072509.
+2020-08-19 22:33:00,266 - __main__ - INFO - Got callback ai from id: 436072509.
+2020-08-19 22:33:00,378 - __main__ - INFO - Starting AI game for id: 436072509.
+2020-08-19 22:33:00,475 - utils - INFO - Setting state of id: 436072509 to IN_AI_GAME.
+2020-08-19 22:33:00,481 - utils - INFO - Sending first AI game message for 436072509
+2020-08-19 22:33:00,983 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 436072509.
+2020-08-19 22:33:01,083 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 436072509.
+2020-08-19 22:33:01,086 - __main__ - INFO - Deleting message Wanna play? from chat 436072509.
+2020-08-19 22:33:06,309 - __main__ - INFO - Got callback 2-3 from id: 436072509.
+2020-08-19 22:33:06,310 - utils - INFO - Proceeding click from id: 436072509 to set (2, 3) value.
+2020-08-19 22:33:13,885 - __main__ - INFO - Got callback 1-4 from id: 436072509.
+2020-08-19 22:33:13,885 - utils - INFO - Proceeding click from id: 436072509 to set (1, 4) value.
+2020-08-19 22:33:20,645 - __main__ - INFO - Got callback 0-3 from id: 436072509.
+2020-08-19 22:33:20,645 - utils - INFO - Proceeding click from id: 436072509 to set (0, 3) value.
+2020-08-19 22:33:32,730 - __main__ - INFO - Got callback 0-5 from id: 436072509.
+2020-08-19 22:33:32,730 - utils - INFO - Proceeding click from id: 436072509 to set (0, 5) value.
+2020-08-19 22:33:38,156 - __main__ - INFO - Got callback 0-6 from id: 436072509.
+2020-08-19 22:33:38,156 - utils - INFO - Proceeding click from id: 436072509 to set (0, 6) value.
+2020-08-19 22:33:44,606 - __main__ - INFO - Got callback 0-4 from id: 436072509.
+2020-08-19 22:33:44,607 - utils - INFO - Proceeding click from id: 436072509 to set (0, 4) value.
+2020-08-19 22:33:52,184 - __main__ - INFO - Got callback 0-3 from id: 436072509.
+2020-08-19 22:33:52,185 - utils - INFO - Proceeding click from id: 436072509 to set (0, 3) value.
+2020-08-19 22:33:59,043 - __main__ - INFO - Got callback 1-2 from id: 436072509.
+2020-08-19 22:33:59,044 - utils - INFO - Proceeding click from id: 436072509 to set (1, 2) value.
+2020-08-19 22:34:07,506 - __main__ - INFO - Got callback 1-1 from id: 436072509.
+2020-08-19 22:34:07,510 - utils - INFO - Proceeding click from id: 436072509 to set (1, 1) value.
+2020-08-19 22:34:08,195 - utils - INFO - Game 1 ended with winner AI
+2020-08-19 22:40:59,087 - __main__ - INFO - New /start command from id: 662834330.
+2020-08-19 22:40:59,190 - utils - INFO - User id: 662834330 is in DB.
+2020-08-19 22:41:00,216 - __main__ - INFO - Got callback ai from id: 662834330.
+2020-08-19 22:41:00,312 - __main__ - INFO - Starting AI game for id: 662834330.
+2020-08-19 22:41:00,383 - utils - INFO - Setting state of id: 662834330 to IN_AI_GAME.
+2020-08-19 22:41:00,390 - utils - INFO - Sending first AI game message for 662834330
+2020-08-19 22:41:00,569 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 662834330.
+2020-08-19 22:41:00,635 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 662834330.
+2020-08-19 22:41:00,638 - __main__ - INFO - Deleting message Hello, welcome to TicTacDrop! from chat 662834330.
+2020-08-19 22:41:02,060 - __main__ - INFO - Got callback 3-4 from id: 662834330.
+2020-08-19 22:41:02,061 - utils - INFO - Proceeding click from id: 662834330 to set (3, 4) value.
+2020-08-19 22:41:04,394 - __main__ - INFO - Got callback 3-3 from id: 662834330.
+2020-08-19 22:41:04,395 - utils - INFO - Proceeding click from id: 662834330 to set (3, 3) value.
+2020-08-19 22:41:08,307 - __main__ - INFO - Got callback 3-3 from id: 662834330.
+2020-08-19 22:41:08,308 - utils - INFO - Proceeding click from id: 662834330 to set (3, 3) value.
+2020-08-19 22:41:09,181 - __main__ - INFO - Got callback 3-3 from id: 662834330.
+2020-08-19 22:41:09,181 - utils - INFO - Proceeding click from id: 662834330 to set (3, 3) value.
+2020-08-19 22:41:12,307 - __main__ - INFO - Got callback 3-4 from id: 662834330.
+2020-08-19 22:41:12,307 - utils - INFO - Proceeding click from id: 662834330 to set (3, 4) value.
+2020-08-19 22:41:16,087 - __main__ - INFO - Got callback 3-2 from id: 662834330.
+2020-08-19 22:41:16,088 - utils - INFO - Proceeding click from id: 662834330 to set (3, 2) value.
+2020-08-19 22:41:20,806 - __main__ - INFO - Got callback 2-2 from id: 662834330.
+2020-08-19 22:41:20,807 - utils - INFO - Proceeding click from id: 662834330 to set (2, 2) value.
+2020-08-19 22:41:24,998 - __main__ - INFO - Got callback 0-3 from id: 662834330.
+2020-08-19 22:41:24,998 - utils - INFO - Proceeding click from id: 662834330 to set (0, 3) value.
+2020-08-19 22:41:31,659 - __main__ - INFO - Got callback 3-0 from id: 662834330.
+2020-08-19 22:41:31,659 - utils - INFO - Proceeding click from id: 662834330 to set (3, 0) value.
+2020-08-19 22:41:36,316 - __main__ - INFO - Got callback 4-5 from id: 662834330.
+2020-08-19 22:41:36,317 - utils - INFO - Proceeding click from id: 662834330 to set (4, 5) value.
+2020-08-19 22:41:37,984 - __main__ - INFO - New /game command from id: 408970630.
+2020-08-19 22:41:39,388 - __main__ - INFO - New /start command from id: 374535633.
+2020-08-19 22:41:39,487 - utils - INFO - Saving user id: 374535633.
+2020-08-19 22:41:40,772 - __main__ - INFO - Got callback 3-5 from id: 662834330.
+2020-08-19 22:41:40,772 - utils - INFO - Proceeding click from id: 662834330 to set (3, 5) value.
+2020-08-19 22:41:50,244 - __main__ - INFO - Got callback person from id: 374535633.
+2020-08-19 22:41:50,323 - __main__ - INFO - Got callback person from id: 408970630.
+2020-08-19 22:41:50,361 - __main__ - INFO - Starting PVP game for id: 374535633.
+2020-08-19 22:41:50,362 - utils - INFO - Setting state of id: 374535633 to IN_PVP_GAME.
+2020-08-19 22:41:50,409 - __main__ - INFO - Starting PVP game for id: 408970630.
+2020-08-19 22:41:50,410 - utils - INFO - Setting state of id: 408970630 to IN_PVP_GAME.
+2020-08-19 22:41:50,459 - utils - INFO - User id 374535633 is looking for game.
+2020-08-19 22:41:50,460 - utils - INFO - No matchmaking game found, creating a new one.
+2020-08-19 22:41:50,460 - utils - INFO - id 374535633 creates new game.
+2020-08-19 22:41:50,463 - __main__ - INFO - Deleting message Hello, welcome to TicTacDrop! from chat 374535633.
+2020-08-19 22:41:50,503 - utils - INFO - User id 408970630 is looking for game.
+2020-08-19 22:41:50,506 - utils - INFO - Sending first PVP game message for 374535633 and 408970630
+2020-08-19 22:41:50,947 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 374535633.
+2020-08-19 22:41:51,106 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 374535633.
+2020-08-19 22:41:51,322 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-19 22:41:51,486 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-19 22:41:51,490 - __main__ - INFO - Deleting message Wanna play? from chat 408970630.
+2020-08-19 22:42:00,128 - __main__ - INFO - Got callback 1-5 from id: 662834330.
+2020-08-19 22:42:00,128 - utils - INFO - Proceeding click from id: 662834330 to set (1, 5) value.
+2020-08-19 22:42:00,585 - utils - INFO - Game 1 ended with winner AI
+2020-08-19 22:42:12,363 - __main__ - INFO - Got callback 5-3 from id: 408970630.
+2020-08-19 22:42:12,363 - utils - INFO - Proceeding click from id: 408970630 to set (5, 3) value.
+2020-08-19 22:42:17,314 - __main__ - INFO - Got callback 3-2 from id: 374535633.
+2020-08-19 22:42:17,314 - utils - INFO - Proceeding click from id: 374535633 to set (3, 2) value.
+2020-08-19 22:42:17,326 - utils - INFO - Deleting messages with keys `['first_message']` from id 374535633.
+2020-08-19 22:42:17,407 - utils - INFO - Filtering messages with keys `['first_message']` from id 374535633.
+2020-08-19 22:42:17,417 - utils - INFO - Deleting messages with keys `['first_message']` from id 408970630.
+2020-08-19 22:42:17,512 - utils - INFO - Filtering messages with keys `['first_message']` from id 408970630.
+2020-08-19 22:42:23,367 - __main__ - INFO - Got callback 1-6 from id: 374535633.
+2020-08-19 22:42:23,367 - utils - INFO - Proceeding click from id: 374535633 to set (1, 6) value.
+2020-08-19 22:42:27,872 - __main__ - INFO - Got callback 5-3 from id: 408970630.
+2020-08-19 22:42:27,872 - utils - INFO - Proceeding click from id: 408970630 to set (5, 3) value.
+2020-08-19 22:42:27,884 - utils - INFO - Deleting messages with keys `['first_message']` from id 408970630.
+2020-08-19 22:42:27,884 - utils - INFO - Filtering messages with keys `['first_message']` from id 408970630.
+2020-08-19 22:42:27,886 - utils - INFO - Deleting messages with keys `['first_message']` from id 374535633.
+2020-08-19 22:42:27,886 - utils - INFO - Filtering messages with keys `['first_message']` from id 374535633.
+2020-08-19 22:42:50,916 - __main__ - INFO - Got callback 4-3 from id: 374535633.
+2020-08-19 22:42:50,917 - utils - INFO - Proceeding click from id: 374535633 to set (4, 3) value.
+2020-08-19 22:42:55,563 - __main__ - INFO - Got callback 5-4 from id: 408970630.
+2020-08-19 22:42:55,563 - utils - INFO - Proceeding click from id: 408970630 to set (5, 4) value.
+2020-08-19 22:42:59,292 - __main__ - INFO - Got callback 3-4 from id: 374535633.
+2020-08-19 22:42:59,293 - utils - INFO - Proceeding click from id: 374535633 to set (3, 4) value.
+2020-08-19 22:43:08,747 - __main__ - INFO - Got callback 4-2 from id: 408970630.
+2020-08-19 22:43:08,747 - utils - INFO - Proceeding click from id: 408970630 to set (4, 2) value.
+2020-08-19 22:43:12,523 - __main__ - INFO - Got callback 3-4 from id: 374535633.
+2020-08-19 22:43:12,523 - utils - INFO - Proceeding click from id: 374535633 to set (3, 4) value.
+2020-08-19 22:43:20,356 - __main__ - INFO - Got callback 5-5 from id: 408970630.
+2020-08-19 22:43:20,357 - utils - INFO - Proceeding click from id: 408970630 to set (5, 5) value.
+2020-08-19 22:43:22,968 - __main__ - INFO - Got callback 5-6 from id: 374535633.
+2020-08-19 22:43:22,969 - utils - INFO - Proceeding click from id: 374535633 to set (5, 6) value.
+2020-08-19 22:43:38,642 - __main__ - INFO - Got callback 4-6 from id: 408970630.
+2020-08-19 22:43:38,642 - utils - INFO - Proceeding click from id: 408970630 to set (4, 6) value.
+2020-08-19 22:43:40,991 - __main__ - INFO - Got callback 4-5 from id: 374535633.
+2020-08-19 22:43:40,991 - utils - INFO - Proceeding click from id: 374535633 to set (4, 5) value.
+2020-08-19 22:43:50,902 - __main__ - INFO - Got callback 3-2 from id: 408970630.
+2020-08-19 22:43:50,902 - utils - INFO - Proceeding click from id: 408970630 to set (3, 2) value.
+2020-08-19 22:43:52,565 - __main__ - INFO - Got callback 3-5 from id: 374535633.
+2020-08-19 22:43:52,565 - utils - INFO - Proceeding click from id: 374535633 to set (3, 5) value.
+2020-08-19 22:43:56,200 - __main__ - INFO - Got callback 2-5 from id: 408970630.
+2020-08-19 22:43:56,200 - utils - INFO - Proceeding click from id: 408970630 to set (2, 5) value.
+2020-08-19 22:44:00,851 - __main__ - INFO - Got callback 3-3 from id: 374535633.
+2020-08-19 22:44:00,852 - utils - INFO - Proceeding click from id: 374535633 to set (3, 3) value.
+2020-08-19 22:44:05,983 - __main__ - INFO - Got callback 2-3 from id: 408970630.
+2020-08-19 22:44:06,027 - utils - INFO - Proceeding click from id: 408970630 to set (2, 3) value.
+2020-08-19 22:44:09,164 - __main__ - INFO - Got callback 2-4 from id: 374535633.
+2020-08-19 22:44:09,165 - utils - INFO - Proceeding click from id: 374535633 to set (2, 4) value.
+2020-08-19 22:44:11,878 - __main__ - INFO - Got callback 1-4 from id: 408970630.
+2020-08-19 22:44:11,878 - utils - INFO - Proceeding click from id: 408970630 to set (1, 4) value.
+2020-08-19 22:44:13,759 - __main__ - INFO - Got callback 3-6 from id: 374535633.
+2020-08-19 22:44:13,759 - utils - INFO - Proceeding click from id: 374535633 to set (3, 6) value.
+2020-08-19 22:44:13,861 - utils - INFO - Game 2 ended with winner 374535633
+2020-08-19 22:44:24,830 - __main__ - INFO - New /game command from id: 408970630.
+2020-08-19 22:44:27,450 - __main__ - INFO - New /game command from id: 374535633.
+2020-08-19 22:44:28,369 - __main__ - INFO - Got callback ai from id: 408970630.
+2020-08-19 22:44:28,478 - __main__ - INFO - Starting AI game for id: 408970630.
+2020-08-19 22:44:28,579 - utils - INFO - Setting state of id: 408970630 to IN_AI_GAME.
+2020-08-19 22:44:28,584 - utils - INFO - Sending first AI game message for 408970630
+2020-08-19 22:44:28,599 - __main__ - INFO - Got callback ai from id: 374535633.
+2020-08-19 22:44:28,685 - __main__ - INFO - Starting AI game for id: 374535633.
+2020-08-19 22:44:28,783 - utils - INFO - Setting state of id: 374535633 to IN_AI_GAME.
+2020-08-19 22:44:28,789 - utils - INFO - Sending first AI game message for 374535633
+2020-08-19 22:44:28,803 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-19 22:44:28,881 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-19 22:44:28,885 - __main__ - INFO - Deleting message Wanna play? from chat 408970630.
+2020-08-19 22:44:29,013 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 374535633.
+2020-08-19 22:44:29,092 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 374535633.
+2020-08-19 22:44:29,095 - __main__ - INFO - Deleting message Wanna play? from chat 374535633.
+2020-08-19 22:44:31,291 - __main__ - INFO - Got callback 5-2 from id: 374535633.
+2020-08-19 22:44:31,291 - utils - INFO - Proceeding click from id: 374535633 to set (5, 2) value.
+2020-08-19 22:44:34,849 - __main__ - INFO - Got callback 5-3 from id: 374535633.
+2020-08-19 22:44:34,849 - utils - INFO - Proceeding click from id: 374535633 to set (5, 3) value.
+2020-08-19 22:44:38,437 - __main__ - INFO - Got callback 5-4 from id: 374535633.
+2020-08-19 22:44:38,438 - utils - INFO - Proceeding click from id: 374535633 to set (5, 4) value.
+2020-08-19 22:44:43,147 - __main__ - INFO - Got callback 4-3 from id: 374535633.
+2020-08-19 22:44:43,148 - utils - INFO - Proceeding click from id: 374535633 to set (4, 3) value.
+2020-08-19 22:44:46,829 - __main__ - INFO - Got callback 4-4 from id: 374535633.
+2020-08-19 22:44:46,829 - utils - INFO - Proceeding click from id: 374535633 to set (4, 4) value.
+2020-08-19 22:44:49,934 - __main__ - INFO - Got callback 3-4 from id: 374535633.
+2020-08-19 22:44:49,945 - utils - INFO - Proceeding click from id: 374535633 to set (3, 4) value.
+2020-08-19 22:44:52,142 - __main__ - INFO - Got callback 3-4 from id: 374535633.
+2020-08-19 22:44:52,142 - utils - INFO - Proceeding click from id: 374535633 to set (3, 4) value.
+2020-08-19 22:44:53,678 - utils - INFO - Game 2 ended with winner AI
+2020-08-19 22:52:25,489 - __main__ - INFO - New /game command from id: 374535633.
+2020-08-19 22:52:28,040 - __main__ - INFO - Got callback ai from id: 374535633.
+2020-08-19 22:52:28,156 - __main__ - INFO - Starting AI game for id: 374535633.
+2020-08-19 22:52:28,242 - utils - INFO - Setting state of id: 374535633 to IN_AI_GAME.
+2020-08-19 22:52:28,255 - utils - INFO - Sending first AI game message for 374535633
+2020-08-19 22:52:28,451 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 374535633.
+2020-08-19 22:52:28,532 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 374535633.
+2020-08-19 22:52:28,535 - __main__ - INFO - Deleting message Wanna play? from chat 374535633.
+2020-08-19 22:52:32,966 - __main__ - INFO - Got callback 5-6 from id: 374535633.
+2020-08-19 22:52:32,966 - utils - INFO - Proceeding click from id: 374535633 to set (5, 6) value.
+2020-08-19 22:52:39,207 - __main__ - INFO - Got callback 5-5 from id: 374535633.
+2020-08-19 22:52:39,207 - utils - INFO - Proceeding click from id: 374535633 to set (5, 5) value.
+2020-08-19 22:52:44,529 - __main__ - INFO - Got callback 4-5 from id: 374535633.
+2020-08-19 22:52:44,530 - utils - INFO - Proceeding click from id: 374535633 to set (4, 5) value.
+2020-08-19 22:52:48,153 - __main__ - INFO - Got callback 4-4 from id: 374535633.
+2020-08-19 22:52:48,154 - utils - INFO - Proceeding click from id: 374535633 to set (4, 4) value.
+2020-08-19 22:52:53,335 - __main__ - INFO - Got callback 3-4 from id: 374535633.
+2020-08-19 22:52:53,335 - utils - INFO - Proceeding click from id: 374535633 to set (3, 4) value.
+2020-08-19 22:52:58,352 - __main__ - INFO - Got callback 5-3 from id: 374535633.
+2020-08-19 22:52:58,352 - utils - INFO - Proceeding click from id: 374535633 to set (5, 3) value.
+2020-08-19 22:53:03,883 - __main__ - INFO - Got callback 3-3 from id: 374535633.
+2020-08-19 22:53:03,883 - utils - INFO - Proceeding click from id: 374535633 to set (3, 3) value.
+2020-08-19 22:53:09,624 - __main__ - INFO - Got callback 4-2 from id: 374535633.
+2020-08-19 22:53:09,624 - utils - INFO - Proceeding click from id: 374535633 to set (4, 2) value.
+2020-08-19 22:53:14,941 - __main__ - INFO - Got callback 3-2 from id: 374535633.
+2020-08-19 22:53:14,942 - utils - INFO - Proceeding click from id: 374535633 to set (3, 2) value.
+2020-08-19 22:53:20,473 - __main__ - INFO - Got callback 2-5 from id: 374535633.
+2020-08-19 22:53:20,473 - utils - INFO - Proceeding click from id: 374535633 to set (2, 5) value.
+2020-08-19 22:53:25,388 - __main__ - INFO - Got callback 1-3 from id: 374535633.
+2020-08-19 22:53:25,388 - utils - INFO - Proceeding click from id: 374535633 to set (1, 3) value.
+2020-08-19 22:53:35,113 - __main__ - INFO - Got callback 1-4 from id: 374535633.
+2020-08-19 22:53:35,114 - utils - INFO - Proceeding click from id: 374535633 to set (1, 4) value.
+2020-08-19 22:53:42,486 - __main__ - INFO - Got callback 2-0 from id: 374535633.
+2020-08-19 22:53:42,487 - utils - INFO - Proceeding click from id: 374535633 to set (2, 0) value.
+2020-08-19 22:53:49,648 - __main__ - INFO - Got callback 4-1 from id: 374535633.
+2020-08-19 22:53:49,651 - utils - INFO - Proceeding click from id: 374535633 to set (4, 1) value.
+2020-08-19 22:53:52,815 - __main__ - INFO - Got callback 2-1 from id: 374535633.
+2020-08-19 22:53:52,815 - utils - INFO - Proceeding click from id: 374535633 to set (2, 1) value.
+2020-08-19 22:54:01,642 - __main__ - INFO - Got callback 2-6 from id: 374535633.
+2020-08-19 22:54:01,643 - utils - INFO - Proceeding click from id: 374535633 to set (2, 6) value.
+2020-08-19 22:54:09,726 - __main__ - INFO - Got callback 0-5 from id: 374535633.
+2020-08-19 22:54:09,727 - utils - INFO - Proceeding click from id: 374535633 to set (0, 5) value.
+2020-08-19 22:54:16,298 - __main__ - INFO - Got callback 0-4 from id: 374535633.
+2020-08-19 22:54:16,298 - utils - INFO - Proceeding click from id: 374535633 to set (0, 4) value.
+2020-08-19 22:54:21,809 - __main__ - INFO - Got callback 1-0 from id: 374535633.
+2020-08-19 22:54:21,810 - utils - INFO - Proceeding click from id: 374535633 to set (1, 0) value.
+2020-08-19 22:54:23,141 - __main__ - INFO - Got callback 0-1 from id: 374535633.
+2020-08-19 22:54:23,141 - utils - INFO - Proceeding click from id: 374535633 to set (0, 1) value.
+2020-08-19 22:54:23,858 - __main__ - INFO - Got callback 0-2 from id: 374535633.
+2020-08-19 22:54:23,858 - utils - INFO - Proceeding click from id: 374535633 to set (0, 2) value.
+2020-08-19 22:54:26,519 - __main__ - INFO - Got callback 1-6 from id: 374535633.
+2020-08-19 22:54:26,520 - utils - INFO - Proceeding click from id: 374535633 to set (1, 6) value.
+2020-08-19 22:54:26,683 - utils - INFO - Game 2 ended with draw.
+2020-08-19 22:54:32,977 - __main__ - INFO - New /game command from id: 374535633.
+2020-08-19 22:54:34,511 - __main__ - INFO - Got callback ai from id: 374535633.
+2020-08-19 22:54:34,614 - __main__ - INFO - Starting AI game for id: 374535633.
+2020-08-19 22:54:34,724 - utils - INFO - Setting state of id: 374535633 to IN_AI_GAME.
+2020-08-19 22:54:34,730 - utils - INFO - Sending first AI game message for 374535633
+2020-08-19 22:54:34,925 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 374535633.
+2020-08-19 22:54:34,997 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 374535633.
+2020-08-19 22:54:35,001 - __main__ - INFO - Deleting message Wanna play? from chat 374535633.
+2020-08-19 22:54:35,694 - __main__ - INFO - Got callback 3-3 from id: 374535633.
+2020-08-19 22:54:35,695 - utils - INFO - Proceeding click from id: 374535633 to set (3, 3) value.
+2020-08-19 22:54:38,603 - __main__ - INFO - Got callback 5-4 from id: 374535633.
+2020-08-19 22:54:38,603 - utils - INFO - Proceeding click from id: 374535633 to set (5, 4) value.
+2020-08-19 22:54:41,585 - __main__ - INFO - Got callback 5-5 from id: 374535633.
+2020-08-19 22:54:41,586 - utils - INFO - Proceeding click from id: 374535633 to set (5, 5) value.
+2020-08-19 22:54:46,590 - __main__ - INFO - Got callback 4-2 from id: 374535633.
+2020-08-19 22:54:46,590 - utils - INFO - Proceeding click from id: 374535633 to set (4, 2) value.
+2020-08-19 22:54:50,584 - __main__ - INFO - Got callback 4-1 from id: 374535633.
+2020-08-19 22:54:50,584 - utils - INFO - Proceeding click from id: 374535633 to set (4, 1) value.
+2020-08-19 22:54:53,348 - __main__ - INFO - Got callback 2-0 from id: 374535633.
+2020-08-19 22:54:53,348 - utils - INFO - Proceeding click from id: 374535633 to set (2, 0) value.
+2020-08-19 22:54:56,121 - __main__ - INFO - Got callback 4-1 from id: 374535633.
+2020-08-19 22:54:56,122 - utils - INFO - Proceeding click from id: 374535633 to set (4, 1) value.
+2020-08-19 22:55:02,564 - __main__ - INFO - Got callback 4-5 from id: 374535633.
+2020-08-19 22:55:02,565 - utils - INFO - Proceeding click from id: 374535633 to set (4, 5) value.
+2020-08-19 22:55:07,479 - __main__ - INFO - Got callback 3-3 from id: 374535633.
+2020-08-19 22:55:07,480 - utils - INFO - Proceeding click from id: 374535633 to set (3, 3) value.
+2020-08-19 22:55:07,560 - __main__ - INFO - Got callback 3-3 from id: 374535633.
+2020-08-19 22:55:07,560 - utils - INFO - Proceeding click from id: 374535633 to set (3, 3) value.
+2020-08-19 22:55:13,217 - __main__ - INFO - Got callback 4-4 from id: 374535633.
+2020-08-19 22:55:13,217 - utils - INFO - Proceeding click from id: 374535633 to set (4, 4) value.
+2020-08-19 22:55:13,959 - utils - INFO - Game 2 ended with winner AI
+2020-08-19 22:55:30,835 - __main__ - INFO - New /game command from id: 374535633.
+2020-08-19 22:55:32,745 - __main__ - INFO - Got callback ai from id: 374535633.
+2020-08-19 22:55:32,844 - __main__ - INFO - Starting AI game for id: 374535633.
+2020-08-19 22:55:32,943 - utils - INFO - Setting state of id: 374535633 to IN_AI_GAME.
+2020-08-19 22:55:32,948 - utils - INFO - Sending first AI game message for 374535633
+2020-08-19 22:55:33,337 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 374535633.
+2020-08-19 22:55:33,410 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 374535633.
+2020-08-19 22:55:33,414 - __main__ - INFO - Deleting message Wanna play? from chat 374535633.
+2020-08-19 22:55:40,147 - __main__ - INFO - Got callback 5-2 from id: 374535633.
+2020-08-19 22:55:40,147 - utils - INFO - Proceeding click from id: 374535633 to set (5, 2) value.
+2020-08-19 22:55:42,638 - __main__ - INFO - Got callback 5-3 from id: 374535633.
+2020-08-19 22:55:42,639 - utils - INFO - Proceeding click from id: 374535633 to set (5, 3) value.
+2020-08-19 22:55:44,653 - __main__ - INFO - Got callback 5-4 from id: 374535633.
+2020-08-19 22:55:44,653 - utils - INFO - Proceeding click from id: 374535633 to set (5, 4) value.
+2020-08-19 22:55:49,669 - __main__ - INFO - Got callback 4-3 from id: 374535633.
+2020-08-19 22:55:49,670 - utils - INFO - Proceeding click from id: 374535633 to set (4, 3) value.
+2020-08-19 22:55:54,278 - __main__ - INFO - Got callback 4-4 from id: 374535633.
+2020-08-19 22:55:54,278 - utils - INFO - Proceeding click from id: 374535633 to set (4, 4) value.
+2020-08-19 22:56:00,933 - __main__ - INFO - Got callback 2-4 from id: 374535633.
+2020-08-19 22:56:00,933 - utils - INFO - Proceeding click from id: 374535633 to set (2, 4) value.
+2020-08-19 22:56:12,462 - __main__ - INFO - Got callback 5-6 from id: 374535633.
+2020-08-19 22:56:12,462 - utils - INFO - Proceeding click from id: 374535633 to set (5, 6) value.
+2020-08-19 22:56:18,136 - __main__ - INFO - Got callback 3-1 from id: 374535633.
+2020-08-19 22:56:18,137 - utils - INFO - Proceeding click from id: 374535633 to set (3, 1) value.
+2020-08-19 22:56:22,951 - __main__ - INFO - Got callback 3-5 from id: 374535633.
+2020-08-19 22:56:22,951 - utils - INFO - Proceeding click from id: 374535633 to set (3, 5) value.
+2020-08-19 22:56:25,930 - __main__ - INFO - New /game command from id: 662834330.
+2020-08-19 22:56:28,069 - __main__ - INFO - Got callback person from id: 662834330.
+2020-08-19 22:56:28,172 - __main__ - INFO - Starting PVP game for id: 662834330.
+2020-08-19 22:56:28,173 - utils - INFO - Setting state of id: 662834330 to IN_PVP_GAME.
+2020-08-19 22:56:28,275 - utils - INFO - User id 662834330 is looking for game.
+2020-08-19 22:56:28,278 - utils - INFO - No matchmaking game found, creating a new one.
+2020-08-19 22:56:28,279 - utils - INFO - id 662834330 creates new game.
+2020-08-19 22:56:28,282 - __main__ - INFO - Deleting message Wanna play? from chat 662834330.
+2020-08-19 22:56:30,938 - __main__ - INFO - Got callback 2-5 from id: 374535633.
+2020-08-19 22:56:30,938 - utils - INFO - Proceeding click from id: 374535633 to set (2, 5) value.
+2020-08-19 22:56:35,852 - __main__ - INFO - Got callback 1-2 from id: 374535633.
+2020-08-19 22:56:35,852 - utils - INFO - Proceeding click from id: 374535633 to set (1, 2) value.
+2020-08-19 22:56:38,616 - __main__ - INFO - Got callback 0-3 from id: 374535633.
+2020-08-19 22:56:38,616 - utils - INFO - Proceeding click from id: 374535633 to set (0, 3) value.
+2020-08-19 22:56:39,324 - utils - INFO - Game 2 ended with winner AI
+2020-08-19 22:57:16,606 - __main__ - INFO - New /game command from id: 374535633.
+2020-08-19 22:57:18,146 - __main__ - INFO - Got callback person from id: 374535633.
+2020-08-19 22:57:18,251 - __main__ - INFO - Starting PVP game for id: 374535633.
+2020-08-19 22:57:18,252 - utils - INFO - Setting state of id: 374535633 to IN_PVP_GAME.
+2020-08-19 22:57:18,353 - utils - INFO - User id 374535633 is looking for game.
+2020-08-19 22:57:18,357 - utils - INFO - Sending first PVP game message for 662834330 and 374535633
+2020-08-19 22:57:18,564 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 662834330.
+2020-08-19 22:57:18,715 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 662834330.
+2020-08-19 22:57:18,932 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 374535633.
+2020-08-19 22:57:19,091 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 374535633.
+2020-08-19 22:57:19,095 - __main__ - INFO - Deleting message Wanna play? from chat 374535633.
+2020-08-19 22:57:30,124 - __main__ - INFO - Got callback 4-2 from id: 662834330.
+2020-08-19 22:57:30,125 - utils - INFO - Proceeding click from id: 662834330 to set (4, 2) value.
+2020-08-19 22:57:30,136 - utils - INFO - Deleting messages with keys `['first_message']` from id 662834330.
+2020-08-19 22:57:30,217 - utils - INFO - Filtering messages with keys `['first_message']` from id 662834330.
+2020-08-19 22:57:30,266 - utils - INFO - Deleting messages with keys `['first_message']` from id 374535633.
+2020-08-19 22:57:30,351 - utils - INFO - Filtering messages with keys `['first_message']` from id 374535633.
+2020-08-19 22:57:39,818 - __main__ - INFO - Got callback 5-3 from id: 374535633.
+2020-08-19 22:57:39,818 - utils - INFO - Proceeding click from id: 374535633 to set (5, 3) value.
+2020-08-19 22:57:39,829 - utils - INFO - Deleting messages with keys `['first_message']` from id 374535633.
+2020-08-19 22:57:39,830 - utils - INFO - Filtering messages with keys `['first_message']` from id 374535633.
+2020-08-19 22:57:39,830 - utils - INFO - Deleting messages with keys `['first_message']` from id 662834330.
+2020-08-19 22:57:39,831 - utils - INFO - Filtering messages with keys `['first_message']` from id 662834330.
+2020-08-19 22:57:42,517 - __main__ - INFO - Got callback 3-3 from id: 662834330.
+2020-08-19 22:57:42,518 - utils - INFO - Proceeding click from id: 662834330 to set (3, 3) value.
+2020-08-19 22:57:46,758 - __main__ - INFO - Got callback 4-2 from id: 374535633.
+2020-08-19 22:57:46,758 - utils - INFO - Proceeding click from id: 374535633 to set (4, 2) value.
+2020-08-19 22:57:49,634 - __main__ - INFO - Got callback 3-3 from id: 662834330.
+2020-08-19 22:57:49,638 - utils - INFO - Proceeding click from id: 662834330 to set (3, 3) value.
+2020-08-19 22:57:51,887 - __main__ - INFO - Got callback 5-4 from id: 374535633.
+2020-08-19 22:57:51,887 - utils - INFO - Proceeding click from id: 374535633 to set (5, 4) value.
+2020-08-19 22:57:54,290 - __main__ - INFO - Got callback 2-3 from id: 662834330.
+2020-08-19 22:57:54,290 - utils - INFO - Proceeding click from id: 662834330 to set (2, 3) value.
+2020-08-19 22:57:56,440 - __main__ - INFO - Got callback 1-3 from id: 374535633.
+2020-08-19 22:57:56,440 - utils - INFO - Proceeding click from id: 374535633 to set (1, 3) value.
+2020-08-19 22:57:58,284 - __main__ - INFO - Got callback 5-5 from id: 662834330.
+2020-08-19 22:57:58,284 - utils - INFO - Proceeding click from id: 662834330 to set (5, 5) value.
+2020-08-19 22:58:02,994 - __main__ - INFO - Got callback 3-2 from id: 374535633.
+2020-08-19 22:58:02,995 - utils - INFO - Proceeding click from id: 374535633 to set (3, 2) value.
+2020-08-19 22:58:15,702 - __main__ - INFO - Got callback 2-2 from id: 662834330.
+2020-08-19 22:58:15,703 - utils - INFO - Proceeding click from id: 662834330 to set (2, 2) value.
+2020-08-19 22:58:21,836 - __main__ - INFO - Got callback 5-1 from id: 374535633.
+2020-08-19 22:58:21,837 - utils - INFO - Proceeding click from id: 374535633 to set (5, 1) value.
+2020-08-19 22:58:24,539 - __main__ - INFO - Got callback 4-4 from id: 662834330.
+2020-08-19 22:58:24,540 - utils - INFO - Proceeding click from id: 662834330 to set (4, 4) value.
+2020-08-19 22:58:24,640 - utils - INFO - Game 3 ended with winner 662834330
+2020-08-19 22:58:47,640 - __main__ - INFO - New /game command from id: 374535633.
+2020-08-19 22:58:48,768 - __main__ - INFO - Got callback person from id: 374535633.
+2020-08-19 22:58:48,874 - __main__ - INFO - Starting PVP game for id: 374535633.
+2020-08-19 22:58:48,876 - utils - INFO - Setting state of id: 374535633 to IN_PVP_GAME.
+2020-08-19 22:58:48,970 - utils - INFO - No games found.
+2020-08-19 22:58:48,971 - utils - INFO - id 374535633 creates new game.
+2020-08-19 22:58:48,974 - __main__ - INFO - Deleting message Wanna play? from chat 374535633.
+2020-08-19 22:59:20,621 - __main__ - INFO - New /game command from id: 662834330.
+2020-08-19 22:59:22,046 - __main__ - INFO - Got callback person from id: 662834330.
+2020-08-19 22:59:22,195 - __main__ - INFO - Starting PVP game for id: 662834330.
+2020-08-19 22:59:22,196 - utils - INFO - Setting state of id: 662834330 to IN_PVP_GAME.
+2020-08-19 22:59:22,290 - utils - INFO - User id 662834330 is looking for game.
+2020-08-19 22:59:22,295 - utils - INFO - Sending first PVP game message for 374535633 and 662834330
+2020-08-19 22:59:22,488 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 374535633.
+2020-08-19 22:59:22,639 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 374535633.
+2020-08-19 22:59:22,828 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 662834330.
+2020-08-19 22:59:23,086 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 662834330.
+2020-08-19 22:59:23,089 - __main__ - INFO - Deleting message Wanna play? from chat 662834330.
+2020-08-19 22:59:30,757 - __main__ - INFO - Got callback 5-4 from id: 374535633.
+2020-08-19 22:59:30,757 - utils - INFO - Proceeding click from id: 374535633 to set (5, 4) value.
+2020-08-19 22:59:30,767 - utils - INFO - Deleting messages with keys `['first_message']` from id 374535633.
+2020-08-19 22:59:30,838 - utils - INFO - Filtering messages with keys `['first_message']` from id 374535633.
+2020-08-19 22:59:30,848 - utils - INFO - Deleting messages with keys `['first_message']` from id 662834330.
+2020-08-19 22:59:30,915 - utils - INFO - Filtering messages with keys `['first_message']` from id 662834330.
+2020-08-19 22:59:35,974 - __main__ - INFO - Got callback 4-4 from id: 662834330.
+2020-08-19 22:59:35,974 - utils - INFO - Proceeding click from id: 662834330 to set (4, 4) value.
+2020-08-19 22:59:35,989 - utils - INFO - Deleting messages with keys `['first_message']` from id 662834330.
+2020-08-19 22:59:35,989 - utils - INFO - Filtering messages with keys `['first_message']` from id 662834330.
+2020-08-19 22:59:35,990 - utils - INFO - Deleting messages with keys `['first_message']` from id 374535633.
+2020-08-19 22:59:35,990 - utils - INFO - Filtering messages with keys `['first_message']` from id 374535633.
+2020-08-19 22:59:39,046 - __main__ - INFO - Got callback 5-3 from id: 374535633.
+2020-08-19 22:59:39,047 - utils - INFO - Proceeding click from id: 374535633 to set (5, 3) value.
+2020-08-19 22:59:42,529 - __main__ - INFO - Got callback 5-2 from id: 662834330.
+2020-08-19 22:59:42,529 - utils - INFO - Proceeding click from id: 662834330 to set (5, 2) value.
+2020-08-19 22:59:44,935 - __main__ - INFO - Got callback 5-5 from id: 374535633.
+2020-08-19 22:59:44,935 - utils - INFO - Proceeding click from id: 374535633 to set (5, 5) value.
+2020-08-19 22:59:47,448 - __main__ - INFO - Got callback 5-6 from id: 662834330.
+2020-08-19 22:59:47,448 - utils - INFO - Proceeding click from id: 662834330 to set (5, 6) value.
+2020-08-19 22:59:48,878 - __main__ - INFO - Got callback 4-3 from id: 374535633.
+2020-08-19 22:59:48,879 - utils - INFO - Proceeding click from id: 374535633 to set (4, 3) value.
+2020-08-19 22:59:55,328 - __main__ - INFO - Got callback 3-4 from id: 662834330.
+2020-08-19 22:59:55,328 - utils - INFO - Proceeding click from id: 662834330 to set (3, 4) value.
+2020-08-19 23:00:05,161 - __main__ - INFO - Got callback 4-2 from id: 374535633.
+2020-08-19 23:00:05,162 - utils - INFO - Proceeding click from id: 374535633 to set (4, 2) value.
+2020-08-19 23:00:11,226 - __main__ - INFO - Got callback 4-5 from id: 662834330.
+2020-08-19 23:00:11,227 - utils - INFO - Proceeding click from id: 662834330 to set (4, 5) value.
+2020-08-19 23:00:22,665 - __main__ - INFO - Got callback 3-3 from id: 374535633.
+2020-08-19 23:00:22,668 - utils - INFO - Proceeding click from id: 374535633 to set (3, 3) value.
+2020-08-19 23:00:25,229 - __main__ - INFO - Got callback 2-3 from id: 662834330.
+2020-08-19 23:00:25,229 - utils - INFO - Proceeding click from id: 662834330 to set (2, 3) value.
+2020-08-19 23:00:25,314 - utils - INFO - Game 1 ended with winner 662834330
+2020-08-19 23:01:37,988 - __main__ - INFO - New /game command from id: 408970630.
+2020-08-19 23:35:55,831 - __main__ - INFO - New /game command from id: 408970630.
+2020-08-19 23:35:57,967 - __main__ - INFO - Got callback ai from id: 408970630.
+2020-08-19 23:35:58,121 - __main__ - INFO - Starting AI game for id: 408970630.
+2020-08-19 23:35:58,199 - utils - INFO - Setting state of id: 408970630 to IN_AI_GAME.
+2020-08-19 23:35:58,206 - utils - INFO - Sending first AI game message for 408970630
+2020-08-19 23:35:58,393 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-19 23:35:58,457 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-19 23:35:58,460 - __main__ - INFO - Deleting message Wanna play? from chat 408970630.
+2020-08-19 23:35:59,774 - __main__ - INFO - Got callback 5-3 from id: 408970630.
+2020-08-19 23:35:59,775 - utils - INFO - Proceeding click from id: 408970630 to set (5, 3) value.
+2020-08-19 23:36:02,645 - __main__ - INFO - Got callback 4-2 from id: 408970630.
+2020-08-19 23:36:02,646 - utils - INFO - Proceeding click from id: 408970630 to set (4, 2) value.
+2020-08-19 23:36:05,073 - __main__ - INFO - Got callback 4-4 from id: 408970630.
+2020-08-19 23:36:05,074 - utils - INFO - Proceeding click from id: 408970630 to set (4, 4) value.
+2020-08-19 23:36:09,119 - __main__ - INFO - Got callback 3-0 from id: 408970630.
+2020-08-19 23:36:09,124 - utils - INFO - Proceeding click from id: 408970630 to set (3, 0) value.
+2020-08-19 23:36:13,959 - __main__ - INFO - Got callback 3-3 from id: 408970630.
+2020-08-19 23:36:13,960 - utils - INFO - Proceeding click from id: 408970630 to set (3, 3) value.
+2020-08-19 23:36:17,828 - __main__ - INFO - Got callback 5-6 from id: 408970630.
+2020-08-19 23:36:17,828 - utils - INFO - Proceeding click from id: 408970630 to set (5, 6) value.
+2020-08-19 23:36:24,393 - __main__ - INFO - Got callback 3-5 from id: 408970630.
+2020-08-19 23:36:24,394 - utils - INFO - Proceeding click from id: 408970630 to set (3, 5) value.
+2020-08-19 23:36:28,996 - __main__ - INFO - Got callback 2-5 from id: 408970630.
+2020-08-19 23:36:28,996 - utils - INFO - Proceeding click from id: 408970630 to set (2, 5) value.
+2020-08-19 23:36:36,102 - __main__ - INFO - Got callback 4-6 from id: 408970630.
+2020-08-19 23:36:36,102 - utils - INFO - Proceeding click from id: 408970630 to set (4, 6) value.
+2020-08-19 23:36:43,140 - __main__ - INFO - Got callback 4-1 from id: 408970630.
+2020-08-19 23:36:43,144 - utils - INFO - Proceeding click from id: 408970630 to set (4, 1) value.
+2020-08-19 23:36:57,989 - __main__ - INFO - Got callback 2-4 from id: 408970630.
+2020-08-19 23:36:57,995 - utils - INFO - Proceeding click from id: 408970630 to set (2, 4) value.
+2020-08-19 23:37:07,384 - __main__ - INFO - Got callback 1-5 from id: 408970630.
+2020-08-19 23:37:07,384 - utils - INFO - Proceeding click from id: 408970630 to set (1, 5) value.
+2020-08-19 23:37:11,252 - __main__ - INFO - Got callback 1-4 from id: 408970630.
+2020-08-19 23:37:11,252 - utils - INFO - Proceeding click from id: 408970630 to set (1, 4) value.
+2020-08-19 23:37:19,170 - __main__ - INFO - Got callback 3-2 from id: 408970630.
+2020-08-19 23:37:19,170 - utils - INFO - Proceeding click from id: 408970630 to set (3, 2) value.
+2020-08-19 23:37:24,336 - __main__ - INFO - Got callback 2-2 from id: 408970630.
+2020-08-19 23:37:24,336 - utils - INFO - Proceeding click from id: 408970630 to set (2, 2) value.
+2020-08-19 23:37:25,085 - utils - INFO - Game 1 ended with winner AI
+2020-08-19 23:43:17,697 - __main__ - INFO - New /start command from id: 408970630.
+2020-08-19 23:43:18,490 - utils - INFO - User id: 408970630 is in DB.
+2020-08-19 23:43:57,023 - __main__ - INFO - Got callback ai from id: 408970630.
+2020-08-19 23:43:57,194 - __main__ - INFO - Starting AI game for id: 408970630.
+2020-08-19 23:43:57,770 - utils - INFO - Setting state of id: 408970630 to IN_AI_GAME.
+2020-08-19 23:43:57,776 - utils - INFO - Sending first AI game message for 408970630
+2020-08-19 23:43:58,389 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-19 23:43:58,586 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-19 23:43:58,589 - __main__ - INFO - Deleting message Hello, welcome to TicTacDrop! from chat 408970630.
+2020-08-19 23:47:11,344 - __main__ - INFO - New /game command from id: 408970630.
+2020-08-19 23:47:12,763 - __main__ - INFO - Got callback ai from id: 408970630.
+2020-08-19 23:48:48,897 - __main__ - INFO - New /game command from id: 408970630.
+2020-08-19 23:48:50,842 - __main__ - INFO - Got callback ai from id: 408970630.
+2020-08-19 23:50:38,933 - __main__ - INFO - New /game command from id: 408970630.
+2020-08-19 23:50:41,357 - __main__ - INFO - Got callback ai from id: 408970630.
+2020-08-19 23:50:41,686 - __main__ - INFO - Starting AI game for id: 408970630.
+2020-08-19 23:50:41,761 - utils - INFO - Setting state of id: 408970630 to IN_AI_GAME.
+2020-08-19 23:50:41,767 - utils - INFO - Sending first AI game message for 408970630
+2020-08-19 23:50:41,986 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-19 23:50:42,067 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-19 23:50:42,070 - __main__ - INFO - Deleting message Wanna play? from chat 408970630.
+2020-08-19 23:58:57,739 - __main__ - INFO - New /game command from id: 408970630.
+2020-08-19 23:58:59,817 - __main__ - INFO - Got callback ai from id: 408970630.
+2020-08-19 23:59:00,031 - __main__ - INFO - Deleting message Wanna play? from chat 408970630.
+2020-08-19 23:59:06,076 - __main__ - INFO - Got callback h from id: 408970630.
+2020-08-19 23:59:06,184 - __main__ - INFO - Deleting message Select AI difficulty level from chat 408970630.
+2020-08-20 00:06:36,041 - __main__ - INFO - New /game command from id: 408970630.
+2020-08-20 00:06:38,410 - __main__ - INFO - Got callback ai from id: 408970630.
+2020-08-20 00:06:38,676 - __main__ - INFO - Starting AI game for id: 408970630.
+2020-08-20 00:06:38,770 - utils - INFO - Setting state of id: 408970630 to IN_AI_GAME.
+2020-08-20 00:06:38,776 - utils - INFO - Sending first AI game message for 408970630
+2020-08-20 00:06:38,986 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-20 00:06:39,066 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-20 00:06:39,069 - __main__ - INFO - Deleting message Wanna play? from chat 408970630.
+2020-08-20 00:06:41,727 - __main__ - INFO - Got callback 5-3 from id: 408970630.
+2020-08-20 00:06:41,728 - utils - INFO - Proceeding click from id: 408970630 to set (5, 3) value.
+2020-08-20 00:06:44,868 - __main__ - INFO - Got callback 3-3 from id: 408970630.
+2020-08-20 00:06:44,869 - utils - INFO - Proceeding click from id: 408970630 to set (3, 3) value.
+2020-08-20 00:06:49,230 - __main__ - INFO - Got callback 5-5 from id: 408970630.
+2020-08-20 00:06:49,231 - utils - INFO - Proceeding click from id: 408970630 to set (5, 5) value.
+2020-08-20 00:06:54,913 - __main__ - INFO - Got callback 4-5 from id: 408970630.
+2020-08-20 00:06:54,913 - utils - INFO - Proceeding click from id: 408970630 to set (4, 5) value.
+2020-08-20 00:07:00,914 - __main__ - INFO - Got callback 2-4 from id: 408970630.
+2020-08-20 00:07:00,914 - utils - INFO - Proceeding click from id: 408970630 to set (2, 4) value.
+2020-08-20 00:07:09,858 - __main__ - INFO - Got callback 2-5 from id: 408970630.
+2020-08-20 00:07:09,858 - utils - INFO - Proceeding click from id: 408970630 to set (2, 5) value.
+2020-08-20 00:07:16,793 - __main__ - INFO - Got callback 1-3 from id: 408970630.
+2020-08-20 00:07:16,793 - utils - INFO - Proceeding click from id: 408970630 to set (1, 3) value.
+2020-08-20 00:07:21,373 - __main__ - INFO - Got callback 4-2 from id: 408970630.
+2020-08-20 00:07:21,373 - utils - INFO - Proceeding click from id: 408970630 to set (4, 2) value.
+2020-08-20 00:07:30,258 - __main__ - INFO - Got callback 5-1 from id: 408970630.
+2020-08-20 00:07:30,258 - utils - INFO - Proceeding click from id: 408970630 to set (5, 1) value.
+2020-08-20 00:07:30,267 - utils - INFO - Game 1 ended with winner 408970630
+2020-08-20 00:10:33,506 - __main__ - INFO - New /game command from id: 408970630.
+2020-08-20 00:10:35,559 - __main__ - INFO - Got callback ai from id: 408970630.
+2020-08-20 00:10:35,703 - __main__ - INFO - Starting AI game for id: 408970630.
+2020-08-20 00:10:35,882 - utils - INFO - Setting state of id: 408970630 to IN_AI_GAME.
+2020-08-20 00:10:35,888 - utils - INFO - Sending first AI game message for 408970630
+2020-08-20 00:10:36,073 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-20 00:10:36,138 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-20 00:10:36,141 - __main__ - INFO - Deleting message Wanna play? from chat 408970630.
+2020-08-20 00:10:37,613 - __main__ - INFO - Got callback 4-3 from id: 408970630.
+2020-08-20 00:10:37,615 - utils - INFO - Proceeding click from id: 408970630 to set (4, 3) value.
+2020-08-20 00:10:38,981 - __main__ - INFO - Got callback 4-3 from id: 408970630.
+2020-08-20 00:10:38,997 - utils - INFO - Proceeding click from id: 408970630 to set (4, 3) value.
+2020-08-20 00:10:40,725 - __main__ - INFO - Got callback 4-3 from id: 408970630.
+2020-08-20 00:10:40,728 - utils - INFO - Proceeding click from id: 408970630 to set (4, 3) value.
+2020-08-20 00:10:45,438 - __main__ - INFO - Got callback 4-4 from id: 408970630.
+2020-08-20 00:10:45,438 - utils - INFO - Proceeding click from id: 408970630 to set (4, 4) value.
+2020-08-20 00:10:49,759 - __main__ - INFO - Got callback 5-6 from id: 408970630.
+2020-08-20 00:10:49,759 - utils - INFO - Proceeding click from id: 408970630 to set (5, 6) value.
+2020-08-20 00:10:53,119 - __main__ - INFO - Got callback 5-2 from id: 408970630.
+2020-08-20 00:10:53,119 - utils - INFO - Proceeding click from id: 408970630 to set (5, 2) value.
+2020-08-20 00:10:58,087 - __main__ - INFO - Got callback 2-2 from id: 408970630.
+2020-08-20 00:10:58,088 - utils - INFO - Proceeding click from id: 408970630 to set (2, 2) value.
+2020-08-20 00:11:04,675 - __main__ - INFO - Got callback 2-4 from id: 408970630.
+2020-08-20 00:11:04,675 - utils - INFO - Proceeding click from id: 408970630 to set (2, 4) value.
+2020-08-20 00:11:12,002 - __main__ - INFO - Got callback 1-3 from id: 408970630.
+2020-08-20 00:11:12,003 - utils - INFO - Proceeding click from id: 408970630 to set (1, 3) value.
+2020-08-20 00:11:17,321 - __main__ - INFO - Got callback 4-6 from id: 408970630.
+2020-08-20 00:11:17,325 - utils - INFO - Proceeding click from id: 408970630 to set (4, 6) value.
+2020-08-20 00:11:19,918 - utils - INFO - Game 1 ended with winner AI
+2020-08-20 00:11:23,741 - __main__ - INFO - New /game command from id: 662834330.
+2020-08-20 00:11:25,078 - __main__ - INFO - Got callback ai from id: 662834330.
+2020-08-20 00:11:25,182 - __main__ - INFO - Starting AI game for id: 662834330.
+2020-08-20 00:11:25,259 - utils - INFO - Setting state of id: 662834330 to IN_AI_GAME.
+2020-08-20 00:11:25,265 - utils - INFO - Sending first AI game message for 662834330
+2020-08-20 00:11:25,426 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 662834330.
+2020-08-20 00:11:25,488 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 662834330.
+2020-08-20 00:11:25,492 - __main__ - INFO - Deleting message Wanna play? from chat 662834330.
+2020-08-20 00:11:29,486 - __main__ - INFO - Got callback 5-1 from id: 662834330.
+2020-08-20 00:11:29,487 - utils - INFO - Proceeding click from id: 662834330 to set (5, 1) value.
+2020-08-20 00:11:32,343 - __main__ - INFO - Got callback 5-0 from id: 662834330.
+2020-08-20 00:11:32,343 - utils - INFO - Proceeding click from id: 662834330 to set (5, 0) value.
+2020-08-20 00:11:35,114 - __main__ - INFO - Got callback 4-1 from id: 662834330.
+2020-08-20 00:11:35,114 - utils - INFO - Proceeding click from id: 662834330 to set (4, 1) value.
+2020-08-20 00:11:39,188 - __main__ - INFO - Got callback 4-3 from id: 662834330.
+2020-08-20 00:11:39,188 - utils - INFO - Proceeding click from id: 662834330 to set (4, 3) value.
+2020-08-20 00:13:36,256 - __main__ - INFO - Got callback 3-6 from id: 662834330.
+2020-08-20 00:13:36,256 - utils - INFO - Proceeding click from id: 662834330 to set (3, 6) value.
+2020-08-20 00:13:39,210 - __main__ - INFO - Got callback 3-2 from id: 662834330.
+2020-08-20 00:13:39,210 - utils - INFO - Proceeding click from id: 662834330 to set (3, 2) value.
+2020-08-20 00:13:50,077 - __main__ - INFO - Got callback 2-2 from id: 662834330.
+2020-08-20 00:13:50,078 - utils - INFO - Proceeding click from id: 662834330 to set (2, 2) value.
+2020-08-20 00:13:53,162 - __main__ - INFO - Got callback 0-1 from id: 662834330.
+2020-08-20 00:13:53,163 - utils - INFO - Proceeding click from id: 662834330 to set (0, 1) value.
+2020-08-20 00:13:57,041 - __main__ - INFO - Got callback 4-4 from id: 662834330.
+2020-08-20 00:13:57,042 - utils - INFO - Proceeding click from id: 662834330 to set (4, 4) value.
+2020-08-20 00:14:02,878 - __main__ - INFO - Got callback 5-5 from id: 662834330.
+2020-08-20 00:14:02,922 - utils - INFO - Proceeding click from id: 662834330 to set (5, 5) value.
+2020-08-20 00:14:03,397 - utils - INFO - Game 1 ended with winner AI
+2020-08-20 00:17:20,891 - __main__ - INFO - New /game command from id: 408970630.
+2020-08-20 00:17:23,259 - __main__ - INFO - Got callback ai from id: 408970630.
+2020-08-20 00:17:23,497 - __main__ - INFO - Starting AI game for id: 408970630.
+2020-08-20 00:17:23,499 - utils - INFO - Setting state of id: 408970630 to IN_AI_GAME.
+2020-08-20 00:17:23,504 - utils - INFO - Sending first AI game message for 408970630
+2020-08-20 00:17:23,700 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-20 00:17:23,773 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-20 00:17:23,776 - __main__ - INFO - Deleting message Wanna play? from chat 408970630.
+2020-08-20 00:17:24,725 - __main__ - INFO - Got callback 4-3 from id: 408970630.
+2020-08-20 00:17:24,726 - utils - INFO - Proceeding click from id: 408970630 to set (4, 3) value.
+2020-08-20 00:17:27,845 - __main__ - INFO - Got callback 4-1 from id: 408970630.
+2020-08-20 00:17:27,846 - utils - INFO - Proceeding click from id: 408970630 to set (4, 1) value.
+2020-08-20 00:17:42,661 - __main__ - INFO - Got callback 3-4 from id: 408970630.
+2020-08-20 00:17:42,662 - utils - INFO - Proceeding click from id: 408970630 to set (3, 4) value.
+2020-08-20 00:17:44,328 - __main__ - INFO - Got callback 5-5 from id: 408970630.
+2020-08-20 00:17:44,328 - utils - INFO - Proceeding click from id: 408970630 to set (5, 5) value.
+2020-08-20 00:17:45,784 - __main__ - INFO - Got callback 3-2 from id: 408970630.
+2020-08-20 00:17:45,795 - utils - INFO - Proceeding click from id: 408970630 to set (3, 2) value.
+2020-08-20 00:17:50,576 - __main__ - INFO - Got callback 3-3 from id: 408970630.
+2020-08-20 00:17:50,577 - utils - INFO - Proceeding click from id: 408970630 to set (3, 3) value.
+2020-08-20 00:17:52,214 - __main__ - INFO - Got callback 3-4 from id: 408970630.
+2020-08-20 00:17:52,215 - utils - INFO - Proceeding click from id: 408970630 to set (3, 4) value.
+2020-08-20 00:17:54,743 - __main__ - INFO - New /game command from id: 662834330.
+2020-08-20 00:17:54,798 - __main__ - INFO - Got callback 4-5 from id: 408970630.
+2020-08-20 00:17:54,799 - utils - INFO - Proceeding click from id: 408970630 to set (4, 5) value.
+2020-08-20 00:17:56,091 - __main__ - INFO - Got callback ai from id: 662834330.
+2020-08-20 00:17:56,205 - __main__ - INFO - Starting AI game for id: 662834330.
+2020-08-20 00:17:56,206 - utils - INFO - Setting state of id: 662834330 to IN_AI_GAME.
+2020-08-20 00:17:56,211 - utils - INFO - Sending first AI game message for 662834330
+2020-08-20 00:17:56,309 - __main__ - INFO - Got callback 4-6 from id: 408970630.
+2020-08-20 00:17:56,309 - utils - INFO - Proceeding click from id: 408970630 to set (4, 6) value.
+2020-08-20 00:17:56,456 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 662834330.
+2020-08-20 00:17:56,534 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 662834330.
+2020-08-20 00:17:56,542 - __main__ - INFO - Deleting message Wanna play? from chat 662834330.
+2020-08-20 00:17:58,094 - __main__ - INFO - Got callback 4-3 from id: 662834330.
+2020-08-20 00:17:58,095 - utils - INFO - Proceeding click from id: 662834330 to set (4, 3) value.
+2020-08-20 00:18:00,285 - __main__ - INFO - Got callback 2-3 from id: 408970630.
+2020-08-20 00:18:00,286 - utils - INFO - Proceeding click from id: 408970630 to set (2, 3) value.
+2020-08-20 00:18:06,136 - __main__ - INFO - Got callback 5-0 from id: 408970630.
+2020-08-20 00:18:06,180 - utils - INFO - Proceeding click from id: 408970630 to set (5, 0) value.
+2020-08-20 00:18:09,144 - __main__ - INFO - Got callback 4-0 from id: 408970630.
+2020-08-20 00:18:09,144 - utils - INFO - Proceeding click from id: 408970630 to set (4, 0) value.
+2020-08-20 00:18:14,130 - __main__ - INFO - Got callback 3-3 from id: 662834330.
+2020-08-20 00:18:14,131 - utils - INFO - Proceeding click from id: 662834330 to set (3, 3) value.
+2020-08-20 00:18:16,328 - __main__ - INFO - Got callback 1-5 from id: 408970630.
+2020-08-20 00:18:16,328 - utils - INFO - Proceeding click from id: 408970630 to set (1, 5) value.
+2020-08-20 00:18:17,134 - __main__ - INFO - Got callback 2-3 from id: 662834330.
+2020-08-20 00:18:17,134 - utils - INFO - Proceeding click from id: 662834330 to set (2, 3) value.
+2020-08-20 00:18:20,827 - __main__ - INFO - Got callback 4-4 from id: 662834330.
+2020-08-20 00:18:20,827 - utils - INFO - Proceeding click from id: 662834330 to set (4, 4) value.
+2020-08-20 00:18:27,267 - __main__ - INFO - Got callback 0-3 from id: 408970630.
+2020-08-20 00:18:27,267 - utils - INFO - Proceeding click from id: 408970630 to set (0, 3) value.
+2020-08-20 00:18:28,613 - __main__ - INFO - Got callback 4-5 from id: 662834330.
+2020-08-20 00:18:28,613 - utils - INFO - Proceeding click from id: 662834330 to set (4, 5) value.
+2020-08-20 00:18:34,415 - __main__ - INFO - Got callback 3-0 from id: 408970630.
+2020-08-20 00:18:34,415 - utils - INFO - Proceeding click from id: 408970630 to set (3, 0) value.
+2020-08-20 00:18:37,722 - __main__ - INFO - Got callback 2-4 from id: 662834330.
+2020-08-20 00:18:37,722 - utils - INFO - Proceeding click from id: 662834330 to set (2, 4) value.
+2020-08-20 00:18:43,904 - __main__ - INFO - Got callback 5-2 from id: 662834330.
+2020-08-20 00:18:43,904 - utils - INFO - Proceeding click from id: 662834330 to set (5, 2) value.
+2020-08-20 00:18:47,047 - __main__ - INFO - Got callback 1-6 from id: 408970630.
+2020-08-20 00:18:47,048 - utils - INFO - Proceeding click from id: 408970630 to set (1, 6) value.
+2020-08-20 00:18:54,388 - __main__ - INFO - Got callback 2-2 from id: 408970630.
+2020-08-20 00:18:54,394 - utils - INFO - Proceeding click from id: 408970630 to set (2, 2) value.
+2020-08-20 00:18:57,879 - __main__ - INFO - Got callback 1-0 from id: 408970630.
+2020-08-20 00:18:57,879 - utils - INFO - Proceeding click from id: 408970630 to set (1, 0) value.
+2020-08-20 00:18:58,241 - utils - INFO - Game 1 ended with winner AI
+2020-08-20 00:18:58,310 - __main__ - INFO - Got callback 3-2 from id: 662834330.
+2020-08-20 00:18:58,311 - utils - INFO - Proceeding click from id: 662834330 to set (3, 2) value.
+2020-08-20 00:19:09,141 - __main__ - INFO - Got callback 4-1 from id: 662834330.
+2020-08-20 00:19:09,144 - utils - INFO - Proceeding click from id: 662834330 to set (4, 1) value.
+2020-08-20 00:19:17,861 - __main__ - INFO - Got callback 1-4 from id: 662834330.
+2020-08-20 00:19:17,862 - utils - INFO - Proceeding click from id: 662834330 to set (1, 4) value.
+2020-08-20 00:19:17,868 - utils - INFO - Game 2 ended with winner 662834330
+2020-08-20 00:21:32,740 - __main__ - INFO - New /game command from id: 662834330.
+2020-08-20 00:21:33,850 - __main__ - INFO - Got callback ai from id: 662834330.
+2020-08-20 00:21:33,990 - __main__ - INFO - Starting AI game for id: 662834330.
+2020-08-20 00:21:33,991 - utils - INFO - Setting state of id: 662834330 to IN_AI_GAME.
+2020-08-20 00:21:33,997 - utils - INFO - Sending first AI game message for 662834330
+2020-08-20 00:21:34,202 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 662834330.
+2020-08-20 00:21:34,275 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 662834330.
+2020-08-20 00:21:34,278 - __main__ - INFO - Deleting message Wanna play? from chat 662834330.
+2020-08-20 00:21:36,309 - __main__ - INFO - Got callback 4-3 from id: 662834330.
+2020-08-20 00:21:36,310 - utils - INFO - Proceeding click from id: 662834330 to set (4, 3) value.
+2020-08-20 00:21:38,562 - __main__ - INFO - Got callback 3-3 from id: 662834330.
+2020-08-20 00:21:38,562 - utils - INFO - Proceeding click from id: 662834330 to set (3, 3) value.
+2020-08-20 00:21:41,129 - __main__ - INFO - Got callback 2-3 from id: 662834330.
+2020-08-20 00:21:41,129 - utils - INFO - Proceeding click from id: 662834330 to set (2, 3) value.
+2020-08-20 00:22:55,776 - __main__ - INFO - New /game command from id: 662834330.
+2020-08-20 00:22:57,099 - __main__ - INFO - Got callback person from id: 662834330.
+2020-08-20 00:22:57,198 - __main__ - INFO - Starting PVP game for id: 662834330.
+2020-08-20 00:22:57,199 - utils - INFO - Setting state of id: 662834330 to IN_PVP_GAME.
+2020-08-20 00:22:57,299 - utils - INFO - No games found.
+2020-08-20 00:22:57,300 - utils - INFO - id 662834330 creates new game.
+2020-08-20 00:22:57,302 - __main__ - INFO - Deleting message Wanna play? from chat 662834330.
+2020-08-20 00:23:09,752 - __main__ - INFO - New /game command from id: 408970630.
+2020-08-20 00:23:13,654 - __main__ - INFO - Got callback person from id: 408970630.
+2020-08-20 00:23:13,760 - __main__ - INFO - Starting PVP game for id: 408970630.
+2020-08-20 00:23:13,762 - utils - INFO - Setting state of id: 408970630 to IN_PVP_GAME.
+2020-08-20 00:23:13,856 - utils - INFO - User id 408970630 is looking for game.
+2020-08-20 00:23:13,861 - utils - INFO - Sending first PVP game message for 662834330 and 408970630
+2020-08-20 00:23:14,065 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 662834330.
+2020-08-20 00:23:14,250 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 662834330.
+2020-08-20 00:23:14,545 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-20 00:23:14,700 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-20 00:23:14,703 - __main__ - INFO - Deleting message Wanna play? from chat 408970630.
+2020-08-20 00:23:17,096 - __main__ - INFO - Got callback 4-2 from id: 408970630.
+2020-08-20 00:23:17,096 - utils - INFO - Proceeding click from id: 408970630 to set (4, 2) value.
+2020-08-20 00:23:18,193 - __main__ - INFO - Got callback 3-3 from id: 662834330.
+2020-08-20 00:23:18,193 - utils - INFO - Proceeding click from id: 662834330 to set (3, 3) value.
+2020-08-20 00:23:18,195 - utils - INFO - Deleting messages with keys `['first_message']` from id 662834330.
+2020-08-20 00:23:18,281 - utils - INFO - Filtering messages with keys `['first_message']` from id 662834330.
+2020-08-20 00:23:18,291 - utils - INFO - Deleting messages with keys `['first_message']` from id 408970630.
+2020-08-20 00:23:18,361 - utils - INFO - Filtering messages with keys `['first_message']` from id 408970630.
+2020-08-20 00:23:21,809 - __main__ - INFO - Got callback 3-3 from id: 408970630.
+2020-08-20 00:23:21,809 - utils - INFO - Proceeding click from id: 408970630 to set (3, 3) value.
+2020-08-20 00:23:21,822 - utils - INFO - Deleting messages with keys `['first_message']` from id 408970630.
+2020-08-20 00:23:21,822 - utils - INFO - Filtering messages with keys `['first_message']` from id 408970630.
+2020-08-20 00:23:21,823 - utils - INFO - Deleting messages with keys `['first_message']` from id 662834330.
+2020-08-20 00:23:21,823 - utils - INFO - Filtering messages with keys `['first_message']` from id 662834330.
+2020-08-20 00:23:23,110 - __main__ - INFO - Got callback 2-4 from id: 662834330.
+2020-08-20 00:23:23,111 - utils - INFO - Proceeding click from id: 662834330 to set (2, 4) value.
+2020-08-20 00:23:25,861 - __main__ - INFO - Got callback 5-2 from id: 408970630.
+2020-08-20 00:23:25,861 - utils - INFO - Proceeding click from id: 408970630 to set (5, 2) value.
+2020-08-20 00:23:27,719 - __main__ - INFO - Got callback 2-3 from id: 662834330.
+2020-08-20 00:23:27,720 - utils - INFO - Proceeding click from id: 662834330 to set (2, 3) value.
+2020-08-20 00:23:30,894 - __main__ - INFO - Got callback 5-5 from id: 408970630.
+2020-08-20 00:23:30,894 - utils - INFO - Proceeding click from id: 408970630 to set (5, 5) value.
+2020-08-20 00:23:32,635 - __main__ - INFO - Got callback 2-4 from id: 662834330.
+2020-08-20 00:23:32,635 - utils - INFO - Proceeding click from id: 662834330 to set (2, 4) value.
+2020-08-20 00:23:35,895 - __main__ - INFO - Got callback 3-4 from id: 408970630.
+2020-08-20 00:23:35,896 - utils - INFO - Proceeding click from id: 408970630 to set (3, 4) value.
+2020-08-20 00:23:37,655 - __main__ - INFO - Got callback 2-3 from id: 662834330.
+2020-08-20 00:23:37,655 - utils - INFO - Proceeding click from id: 662834330 to set (2, 3) value.
+2020-08-20 00:23:42,724 - __main__ - INFO - Got callback 4-5 from id: 408970630.
+2020-08-20 00:23:42,725 - utils - INFO - Proceeding click from id: 408970630 to set (4, 5) value.
+2020-08-20 00:23:44,819 - __main__ - INFO - Got callback 1-3 from id: 662834330.
+2020-08-20 00:23:44,819 - utils - INFO - Proceeding click from id: 662834330 to set (1, 3) value.
+2020-08-20 00:23:47,352 - __main__ - INFO - Got callback 0-3 from id: 408970630.
+2020-08-20 00:23:47,352 - utils - INFO - Proceeding click from id: 408970630 to set (0, 3) value.
+2020-08-20 00:23:54,756 - __main__ - INFO - Got callback 3-2 from id: 662834330.
+2020-08-20 00:23:54,756 - utils - INFO - Proceeding click from id: 662834330 to set (3, 2) value.
+2020-08-20 00:24:04,635 - __main__ - INFO - Got callback 2-4 from id: 408970630.
+2020-08-20 00:24:04,636 - utils - INFO - Proceeding click from id: 408970630 to set (2, 4) value.
+2020-08-20 00:24:09,142 - __main__ - INFO - Got callback 1-4 from id: 662834330.
+2020-08-20 00:24:09,142 - utils - INFO - Proceeding click from id: 662834330 to set (1, 4) value.
+2020-08-20 00:24:23,136 - __main__ - INFO - Got callback 5-6 from id: 408970630.
+2020-08-20 00:24:23,181 - utils - INFO - Proceeding click from id: 408970630 to set (5, 6) value.
+2020-08-20 00:24:28,237 - __main__ - INFO - Got callback 4-6 from id: 662834330.
+2020-08-20 00:24:28,243 - utils - INFO - Proceeding click from id: 662834330 to set (4, 6) value.
+2020-08-20 00:24:35,980 - __main__ - INFO - Got callback 3-2 from id: 408970630.
+2020-08-20 00:24:35,984 - utils - INFO - Proceeding click from id: 408970630 to set (3, 2) value.
+2020-08-20 00:24:47,080 - __main__ - INFO - Got callback 2-2 from id: 662834330.
+2020-08-20 00:24:47,080 - utils - INFO - Proceeding click from id: 662834330 to set (2, 2) value.
+2020-08-20 00:25:22,048 - __main__ - INFO - Got callback 3-6 from id: 408970630.
+2020-08-20 00:25:22,048 - utils - INFO - Proceeding click from id: 408970630 to set (3, 6) value.
+2020-08-20 00:25:44,135 - __main__ - INFO - Got callback 2-6 from id: 662834330.
+2020-08-20 00:25:44,136 - utils - INFO - Proceeding click from id: 662834330 to set (2, 6) value.
+2020-08-20 00:26:05,913 - __main__ - INFO - Got callback 1-6 from id: 408970630.
+2020-08-20 00:26:05,914 - utils - INFO - Proceeding click from id: 408970630 to set (1, 6) value.
+2020-08-20 00:26:24,568 - __main__ - INFO - Got callback 5-1 from id: 662834330.
+2020-08-20 00:26:24,568 - utils - INFO - Proceeding click from id: 662834330 to set (5, 1) value.
+2020-08-20 00:26:48,411 - __main__ - INFO - Got callback 1-2 from id: 408970630.
+2020-08-20 00:26:48,412 - utils - INFO - Proceeding click from id: 408970630 to set (1, 2) value.
+2020-08-20 00:26:53,239 - __main__ - INFO - Got callback 4-0 from id: 662834330.
+2020-08-20 00:26:53,239 - utils - INFO - Proceeding click from id: 662834330 to set (4, 0) value.
+2020-08-20 00:26:58,768 - __main__ - INFO - Got callback 4-1 from id: 408970630.
+2020-08-20 00:26:58,812 - utils - INFO - Proceeding click from id: 408970630 to set (4, 1) value.
+2020-08-20 00:27:08,804 - __main__ - INFO - Got callback 3-1 from id: 662834330.
+2020-08-20 00:27:08,805 - utils - INFO - Proceeding click from id: 662834330 to set (3, 1) value.
+2020-08-20 00:27:09,026 - __main__ - INFO - Got callback 3-1 from id: 662834330.
+2020-08-20 00:27:09,026 - utils - INFO - Proceeding click from id: 662834330 to set (3, 1) value.
+2020-08-20 00:27:14,216 - __main__ - INFO - Got callback 3-1 from id: 662834330.
+2020-08-20 00:27:14,216 - utils - INFO - Proceeding click from id: 662834330 to set (3, 1) value.
+2020-08-20 00:27:14,945 - __main__ - INFO - Got callback 2-1 from id: 408970630.
+2020-08-20 00:27:14,946 - utils - INFO - Proceeding click from id: 408970630 to set (2, 1) value.
+2020-08-20 00:27:25,909 - __main__ - INFO - Got callback 0-4 from id: 662834330.
+2020-08-20 00:27:25,910 - utils - INFO - Proceeding click from id: 662834330 to set (0, 4) value.
+2020-08-20 00:27:26,007 - utils - INFO - Game 1 ended with winner 662834330
+2020-08-20 00:28:18,741 - __main__ - INFO - New /game command from id: 408970630.
+2020-08-20 00:28:21,403 - __main__ - INFO - Got callback ai from id: 408970630.
+2020-08-20 00:28:21,518 - __main__ - INFO - Starting AI game for id: 408970630.
+2020-08-20 00:28:21,520 - utils - INFO - Setting state of id: 408970630 to IN_AI_GAME.
+2020-08-20 00:28:21,527 - utils - INFO - Sending first AI game message for 408970630
+2020-08-20 00:28:21,775 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-20 00:28:21,864 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 408970630.
+2020-08-20 00:28:21,867 - __main__ - INFO - Deleting message Wanna play? from chat 408970630.
+2020-08-20 00:28:22,478 - __main__ - INFO - Got callback 4-4 from id: 408970630.
+2020-08-20 00:28:22,478 - utils - INFO - Proceeding click from id: 408970630 to set (4, 4) value.
+2020-08-20 00:28:24,296 - __main__ - INFO - Got callback 4-3 from id: 408970630.
+2020-08-20 00:28:24,296 - utils - INFO - Proceeding click from id: 408970630 to set (4, 3) value.
+2020-08-20 00:28:27,707 - __main__ - INFO - Got callback 4-2 from id: 408970630.
+2020-08-20 00:28:27,707 - utils - INFO - Proceeding click from id: 408970630 to set (4, 2) value.
+2020-08-20 00:28:29,904 - __main__ - INFO - Got callback 5-6 from id: 408970630.
+2020-08-20 00:28:29,904 - utils - INFO - Proceeding click from id: 408970630 to set (5, 6) value.
+2020-08-20 00:28:32,510 - __main__ - INFO - Got callback 4-4 from id: 408970630.
+2020-08-20 00:28:32,510 - utils - INFO - Proceeding click from id: 408970630 to set (4, 4) value.
+2020-08-20 00:28:34,733 - __main__ - INFO - Got callback 4-3 from id: 408970630.
+2020-08-20 00:28:34,733 - utils - INFO - Proceeding click from id: 408970630 to set (4, 3) value.
+2020-08-20 00:28:57,148 - __main__ - INFO - New /game command from id: 662834330.
+2020-08-20 00:28:58,677 - __main__ - INFO - Got callback ai from id: 662834330.
+2020-08-20 00:28:58,805 - __main__ - INFO - Starting AI game for id: 662834330.
+2020-08-20 00:28:58,807 - utils - INFO - Setting state of id: 662834330 to IN_AI_GAME.
+2020-08-20 00:28:58,812 - utils - INFO - Sending first AI game message for 662834330
+2020-08-20 00:28:59,024 - utils - INFO - Deleting messages with keys `['starting_the_game', 'matchmaking']` from id 662834330.
+2020-08-20 00:28:59,099 - utils - INFO - Filtering messages with keys `['starting_the_game', 'matchmaking']` from id 662834330.
+2020-08-20 00:28:59,102 - __main__ - INFO - Deleting message Wanna play? from chat 662834330.
+2020-08-20 00:29:01,034 - __main__ - INFO - Got callback 4-2 from id: 662834330.
+2020-08-20 00:29:01,036 - utils - INFO - Proceeding click from id: 662834330 to set (4, 2) value.
+2020-08-20 00:29:07,179 - __main__ - INFO - Got callback 4-3 from id: 662834330.
+2020-08-20 00:29:07,179 - utils - INFO - Proceeding click from id: 662834330 to set (4, 3) value.
+2020-08-20 00:29:10,714 - __main__ - INFO - Got callback 3-2 from id: 408970630.
+2020-08-20 00:29:10,715 - utils - INFO - Proceeding click from id: 408970630 to set (3, 2) value.
+2020-08-20 00:29:13,660 - __main__ - INFO - Got callback 2-5 from id: 408970630.
+2020-08-20 00:29:13,660 - utils - INFO - Proceeding click from id: 408970630 to set (2, 5) value.
+2020-08-20 00:29:17,212 - __main__ - INFO - Got callback 3-4 from id: 408970630.
+2020-08-20 00:29:17,213 - utils - INFO - Proceeding click from id: 408970630 to set (3, 4) value.
+2020-08-20 00:29:33,794 - __main__ - INFO - Got callback 3-3 from id: 408970630.
+2020-08-20 00:29:33,794 - utils - INFO - Proceeding click from id: 408970630 to set (3, 3) value.
+2020-08-20 00:29:38,249 - __main__ - INFO - Got callback 2-3 from id: 408970630.
+2020-08-20 00:29:38,250 - utils - INFO - Proceeding click from id: 408970630 to set (2, 3) value.
+2020-08-20 00:29:38,258 - utils - INFO - Game 1 ended with winner 408970630
