@@ -111,7 +111,7 @@ def leave(msg: telebot.types.Message):
     :return: Terminates with corresponding response when user is not registered
     or is not in game
     """
-    if not utils.in_pvp_game(msg.from_user):
+    if utils.in_menu(msg.from_user):
         bot.reply_to(
             msg,
             'This command outside of game is useless.'
@@ -123,22 +123,22 @@ def leave(msg: telebot.types.Message):
         # todo log something
         return
 
+    user.state = states.USER_IN_MENU
+    user.losses += 1
+    utils.update_user(user)
     bot.send_message(
         user.user_id,
         'You surrendered.'
     )
-    bot.send_message(
-        opponent.user_id,
-        'Your opponent surrendered'
-    )
 
-    user.state = states.USER_IN_MENU
-    opponent.state = states.USER_IN_MENU
-    user.losses += 1
-    opponent.wins += 1
-
-    utils.update_user(user)
-    utils.update_user(opponent)
+    if opponent:
+        opponent.state = states.USER_IN_MENU
+        opponent.wins += 1
+        utils.update_user(opponent)
+        bot.send_message(
+            opponent.user_id,
+            'Your opponent surrendered'
+        )
 
     field = json.loads(game.field)
     sig = 1 if user == game.user1 else 2
@@ -149,7 +149,8 @@ def leave(msg: telebot.types.Message):
             if field[i][j] == sig:
                 field[i][j] = 4
 
-    utils.send_updated_field(bot, field, game, opponent)
+    if opponent:
+        utils.send_updated_field(bot, field, game, opponent)
     Game.delete_by_id(game.id)
 
 
@@ -311,8 +312,10 @@ def proceed_menu_button_click(cb: telebot.types.CallbackQuery):
         utils.update_dissolving_messages(user, 'starting_the_game', message)
 
     if cb.data == 'ai':
+        # TODO inline keyboard for selecting AI difficulty level
         logger.info(f'Starting AI game for id: {cb.from_user.id}.')
         utils.start_new_game(bot, cb.from_user, 'ai')
+
     elif cb.data == 'person':
         logger.info(f'Starting PVP game for id: {cb.from_user.id}.')
         utils.start_new_game(bot, cb.from_user, 'person')
@@ -323,8 +326,12 @@ def proceed_menu_button_click(cb: telebot.types.CallbackQuery):
         cb.message.message_id
     )
 
+# TODO selecting difficulty level for AI-games
+# @bot.callback_query_handler(func=lambda cb: utils.in_menu(cb.from_user) and cb.data in ['s', 'm', 'h'])
+# def proceed_game_field_click(cb: telebot.types.CallbackQuery):
 
-@bot.callback_query_handler(func=lambda cb: utils.in_pvp_game(cb.from_user) and re.match("[0-9]-[0-9]", cb.data))
+
+@bot.callback_query_handler(func=lambda cb: not utils.in_menu(cb.from_user) and re.match("[0-9]-[0-9]", cb.data))
 def proceed_game_field_click(cb: telebot.types.CallbackQuery):
     """
     Handles any game field clicks and performs corresponding actions
